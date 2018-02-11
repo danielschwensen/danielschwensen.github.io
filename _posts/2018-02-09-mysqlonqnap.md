@@ -6,9 +6,13 @@ date: 2018-02-09
 
 # MariaDB
 
-## Install MariaDB via App Center
+Install MariaDB via App Center
 
-## Enabling MySQL
+![MariaDB]({{ "/assets/2018-02-09-MariaDB.png" | absolute_url }})
+
+Enabling MySQL
+
+![EnablingMySQL]({{ "/assets/2018-02-09-enablingMySQL.png" | absolute_url }})
 
 QNAP Default Username/Password for MySQL
 
@@ -41,3 +45,5 @@ This commant grants user 'root' permissions to connect from anywhere on the 192.
 # SSH
 
 Bear in mind that only the user admin is allowed to connect via ssh to your Qnap device - if ssh is enabled.
+
+![EnableSSH]({{ "/assets/2018-02-09-enableSSH.png" | absolute_url }})
