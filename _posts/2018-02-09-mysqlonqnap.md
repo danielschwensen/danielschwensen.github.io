@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "WinSCP Backup"
-date: 2018-01-28
+title: "How to install and access MySQL on Qnap"
+date: 2018-02-09
 ---
 
 MariaDB
