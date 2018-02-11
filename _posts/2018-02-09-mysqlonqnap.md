@@ -21,7 +21,7 @@ Also, you need to install  phpMyAdmin in order to administer your databases with
 
 <img src="img\2018\20180209\2018-02-09-myPHPAdmin.png">
 
-Access: http://<ip of your NAS>/phpMyAdmin
+"Access: http://<ip of your NAS>/phpMyAdmin"
 
 Workbench
 
