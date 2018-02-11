@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "WinSCP Backup"
-date: 2018-01-28
+title: "How to install and access MySQL on Qnap"
+date: 2018-02-09
 ---
 
 MariaDB
@@ -21,7 +21,7 @@ Also, you need to install  phpMyAdmin in order to administer your databases with
 
 ![My helpful screenshot]({{ "/assets/2018-02-09-myPHPAdmin.png" | absolute_url }})
 
-Access: http://<ip of your NAS>/phpMyAdmin
+"Access: http://<ip of your NAS>/phpMyAdmin"
 
 Workbench
 
