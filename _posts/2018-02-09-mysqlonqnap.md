@@ -4,7 +4,7 @@ title: "How to install and access MySQL on Qnap"
 date: 2018-02-09
 ---
 
-# MariaDB
+## MariaDB
 
 Install MariaDB via App Center
 
@@ -19,7 +19,7 @@ QNAP Default Username/Password for MySQL
 The default username for MySQL on your QNAP is “root” and the default password is “admin“.In case you changed the password of root and forgot what it was;
 In the “Applications” → “SQL Server” page a “Reset root password” will allow you to reset it to it’s defaults.
 
-# phpMyAdmin
+## phpMyAdmin
 
 Also, you need to install  phpMyAdmin in order to administer your databases with a web browser.
 
@@ -27,7 +27,7 @@ Also, you need to install  phpMyAdmin in order to administer your databases with
 
 "Access: http://<ip of your NAS>/phpMyAdmin"
 
-# Workbench
+## Workbench
 
 Another option would be Workbench. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.
 
@@ -42,7 +42,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.100.%' IDENTIFIED BY 'my-new-pass
 
 This commant grants user 'root' permissions to connect from anywhere on the 192.168.100.0/24 LAN.
 
-# SSH
+## SSH
 
 Bear in mind that only the user admin is allowed to connect via ssh to your Qnap device - if ssh is enabled.
 
