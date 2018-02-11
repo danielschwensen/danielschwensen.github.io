@@ -1,0 +1,5 @@
+name: Daniel
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+# Google Analytics
+google_analytics: UA—113138759-1
