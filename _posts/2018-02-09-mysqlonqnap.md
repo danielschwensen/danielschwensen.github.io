@@ -25,7 +25,7 @@ Also, you need to install  phpMyAdmin in order to administer your databases with
 
 ![My helpful screenshot]({{ "/assets/2018-02-09-myPHPAdmin.png" | absolute_url }})
 
-Access: http://`<ip of your NAS>`/phpMyAdmin
+Access: http://`<ip of your Qnap>`/phpMyAdmin
 
 ## Workbench
 
