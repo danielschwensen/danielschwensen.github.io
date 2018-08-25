@@ -1,0 +1,16 @@
+---
+layout: post
+title: "WinSCP Backup"
+date: 2018-01-28
+---
+
+I always forget to backup my WinSCP setting but today I set up a task added the following simple entry to my backup script:
+```powershell
+$BackupPath = "YourDestination"
+$WinScpExportRegKey = "HKCU\Software\Martin Prikryl"
+$WinScpstrExportFileName = "WinScpSettings_$(get-date -f yyyyMMddhhmmss).reg"
+$WinScpExportPath = "$env:Temp\ $WinScpstrExportFileName"
+Reg export $WinScpExportRegKey $WinScpExportPath
+Copy-Item -Path $WinScpExportPath "$BackupPath\WinSCP"
+```
+Ta-da! Should have - as always -done it before :-)
