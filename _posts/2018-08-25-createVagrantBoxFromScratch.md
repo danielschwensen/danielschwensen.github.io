@@ -27,7 +27,7 @@ curl http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/
 
 Create a new vm
 
-![01]({{ "/assets/20180825-CreateVagrantBoxFromScratch/01-new vm.png" | absolute_url }})
+![01]({{ "/assets/20180525-CreateVagrantBoxFromScratch-01" | absolute_url }})
 
 ![02]({{ "/assets/20180825-CreateVagrantBoxFromScratch/02.png" | absolute_url }})
 
@@ -36,6 +36,7 @@ Create a new vm
 ![04]({{ "/assets/20180825-CreateVagrantBoxFromScratch/04.png" | absolute_url }})
 
 ![05]({{ "/assets/20180825-CreateVagrantBoxFromScratch/05.png" | absolute_url }})
+
 
 ## VM Settings
 
