@@ -1,16 +1,39 @@
 ---
 layout: post
-title: "WinSCP Backup"
-date: 2018-01-28
+title: "Create Vagrant Box from Scratch"
+date: 2018-08-25
 ---
 
-I always forget to backup my WinSCP setting but today I set up a task added the following simple entry to my backup script:
-```powershell
-$BackupPath = "YourDestination"
-$WinScpExportRegKey = "HKCU\Software\Martin Prikryl"
-$WinScpstrExportFileName = "WinScpSettings_$(get-date -f yyyyMMddhhmmss).reg"
-$WinScpExportPath = "$env:Temp\ $WinScpstrExportFileName"
-Reg export $WinScpExportRegKey $WinScpExportPath
-Copy-Item -Path $WinScpExportPath "$BackupPath\WinSCP"
+## Requirements
+
+Virtual Box and Vagrant needs to be installed and configured first!
+
+I am gonna be using the Ubuntu base image Ubuntu 18.04 "Bionic Beaver
+
+Create a new folder were you can store your OS image and Vagrant file.
+
+
 ```
-Ta-da! Should have - as always -done it before :-)
+mkdir VagrantUbuntuBox
+cd VagrantUbuntuBox
+```
+Download the iso
+
+```
+curl http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso -o Ubuntu-mini.iso
+```
+
+## Virtual Box
+
+Create a new vm
+
+![01]({{ "/assets/CreateVagrantBoxFromScratch/01-new vm.png" | absolute_url }})
+
+
+
+
+
+```
+CODE
+```
+
