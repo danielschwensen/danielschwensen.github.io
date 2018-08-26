@@ -3,3 +3,5 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 # Google Analytics
 google_analytics: UA-124566147-1
+plugins:
+  - jekyll-seo-tag
