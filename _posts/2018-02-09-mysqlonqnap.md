@@ -2,6 +2,8 @@
 layout: post
 title: "How to install and access MySQL on Qnap"
 date: 2018-02-09
+categories: blog development database
+tags: MySQL MariaDB Qnap install
 ---
 
 ## MariaDB

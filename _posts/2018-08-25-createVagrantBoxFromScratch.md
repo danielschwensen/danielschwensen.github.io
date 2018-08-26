@@ -2,6 +2,8 @@
 layout: post
 title: "Create Vagrant Box from Scratch"
 date: 2018-08-25
+categories: blog development DevOps
+tags: Vagrant code Linux install
 ---
 
 ## Requirements
@@ -13,7 +15,9 @@ I am gonna be using the Ubuntu base image "Ubuntu 18.04, Bionic Beaver"
 Create a new folder were you can store your OS image and Vagrant file.
 
 
-```
+{% highlight Powershell %}
+
+{% endhighlight %}
 mkdir VagrantUbuntuBox
 cd VagrantUbuntuBox
 ```
@@ -72,17 +76,20 @@ Although vagrant is a superuser you don't want to type sudo < command > all the 
 
 To prevent that:
 
-```
+{% highlight Powershell %}
 sudo su -
 visudo -f /etc/sudoers.d/vagrant
-```
+{% endhighlight %}
+
 and add
-```
+
+{% highlight Powershell %}
 vagrant ALL=(ALL) NOPASSWD:ALL
-```
+{% endhighlight %}
+
 Adding insecure Keypair from https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant.pub
 
-```
+{% highlight Powershell %}
 mkdir /home/vagrant/.ssh
 chmod 0700 /home/vagrant/.ssh
 cd /home/vagrant/.ssh
@@ -91,7 +98,7 @@ mv vagrant.pub authorized_keys
 chmod 0600 authorized_keys
 cd ../
 chown -R vagrant .ssh/
-```
+{% endhighlight %}
 
 ## SSH CONFIG
 
@@ -123,18 +130,18 @@ apt-get install -y gcc build-essential git linux-headers-$(uname -r) dkms
 
 Insert Guest Additions CD image from Devices menu
 
-```
+{% highlight Powershell %}
 mount /dev/cdrom /mnt
 cd /mount
 ./VBoxLinuxAdditions.run
-```
+{% endhighlight %}
 
 Zero out the disk to fix fragmentation issues and to compress the disk easier
 
-```
+{% highlight Powershell %}
 dd if=/dev/zero of=/EMPTY bs=1M
 rm -f /EMPTY
-```
+{% endhighlight %}
 
 ## Create your box
 
@@ -143,15 +150,15 @@ rm -f /EMPTY
 
 Run
 
-```
+{% highlight Powershell %}
 vagrant init ubuntu64 -m
 vagrant up
-```
+{% endhighlight %}
 
 ![12]({{ "/assets/20180825-CreateVagrantBoxFromScratch-12.png" | absolute_url }})
 
 You now should be able to access your box via ssh
 
-```
+{% highlight Powershell %}
 vagrant ssh
-```
+{% endhighlight %}

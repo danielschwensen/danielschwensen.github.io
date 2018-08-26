@@ -2,6 +2,8 @@
 layout: post
 title: "Installing Packer on CentOS"
 date: 2018-08-26
+categories: blog development DevOps
+tags: Packer code Linux install
 ---
 (I am working with CentOS 7)
 
