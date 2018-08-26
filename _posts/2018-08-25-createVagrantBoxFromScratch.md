@@ -53,9 +53,11 @@ Select your iso image.
 Start the vm and confirm the default settings during the installation.
 
 user = vagrant
+
 pw = vagrant
 
 Use entire disk
+
 Install automatic updates
 
 ![08]({{ "/assets/20180825-CreateVagrantBoxFromScratch-08.png" | absolute_url }})
@@ -105,7 +107,7 @@ and add to the end of the file
 AuthorizedKeysFile %h/.ssh/authorized_keys
 ```
 
-Restart the ssh serice
+Restart the ssh service
 
 ```
 service ssh restart
