@@ -9,7 +9,7 @@ Requirements:
 - unzip
 - wget
 
-Installing Packer
+## Installing Packer
 
 Move to /usr/local/bin, download and unpack packer.
 
