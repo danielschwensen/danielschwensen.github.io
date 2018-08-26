@@ -2,13 +2,16 @@
 layout: default 
 title: Daniel 
 ---
-<div class="row"
-    <div class="eight colums">
-        {% for post in site.post %}
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <div class="row">
-            <div class="twelve colums">
-                {{ post.content }}
-            </div>
+<div class="row">
+  <div class="eight colums">
+    {% for post in site.post %}
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    
+    <div class="row">
+        <div class="twelve colums">
+            {{ post.content }}
         </div>
-        {% endfor %}
+    </div>
+    {% endfor %}
+    </div>
+</div>
