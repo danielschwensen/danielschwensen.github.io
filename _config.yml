@@ -1,5 +1,6 @@
 name: Daniel Schwensen
 markdown: kramdown
+paginate: 3
 permalink: /blog/:year/:month/:day/:title
 google_analytics: UA-124566147-1
 plugins:
