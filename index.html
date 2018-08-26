@@ -37,7 +37,6 @@ title: Daniel
     </div>
     <div class="four columns">
       <h1>Recent Writings</h1>
-      <p>From the archive:</p>
       <ul class="disc">
       {% for post in site.posts offset: 1 limit: 10 %}
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
