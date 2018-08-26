@@ -16,16 +16,16 @@ Create a new folder were you can store your OS image and Vagrant file.
 
 
 {% highlight Powershell %}
-
-{% endhighlight %}
 mkdir VagrantUbuntuBox
 cd VagrantUbuntuBox
-```
+{% endhighlight %}
+
 Download the iso
 
-```
+{% highlight Powershell %}
 curl http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso -o Ubuntu-mini.iso
-```
+{% endhighlight %}
+
 
 ## Virtual Box
 
