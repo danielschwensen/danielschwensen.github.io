@@ -36,12 +36,12 @@ class Konsolendemo
         Console.WriteLine("Euro --> Dollar Calculator\n");
         do
         {
-            float kurs, euro, dollar;
+            float rate, euro, dollar;
             Console.WriteLine("Please enter the current dollar exchange rate: ");
-            kurs = Convert.ToSingle(Console.ReadLine());
+            rate = Convert.ToSingle(Console.ReadLine());
             Console.Write("How many Euros would you like to change? ");
             euro = Convert.ToSingle(Console.ReadLine());
-            dollar = euro * kurs;
+            dollar = euro * rate;
             Console.WriteLine("You get " + dollar.ToString("0.00 $"));
             Console.WriteLine("Terminate? (j/n)");
             string s = Console.ReadLine();
