@@ -3,7 +3,7 @@ layout: post
 title: "How to compile a C# source file without Visual Studio"
 date: 2018-09-02
 categories: blog development
-tags: C# csc .NET
+tags: C# .NET csc
 ---
 You don't need Visual Studio to compile C# source code. Although VS is largely available I find it interesting to know how you can compile a simple source file to an executable file without it.
 
