@@ -7,9 +7,9 @@ tags: Linux Windows
 ---
 1. To enable Windows Subsystem for Linux (WSL) on your computer, you need to run the following powershell command as an admin:
 
-{% highlight Powershell %}
+````powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-{% endhighlight %}
+````
 
 2. Restart your computer when prompted
 
@@ -24,16 +24,15 @@ There are several Linux distributions available to run on WSL. You can find and 
 
 After the Linux distribution has installed, open it. You can do this by entering WSL from the Start menu. You'll be prompted to create an account name and password when you run a distribution for the first time. After this first time, when you start the distribution, you'll be signed in as this normal (non-admin) user by default.
 
-[!NOTE]
-Note
+**Note**
 
 You can choose any user name and password. They have no bearing on your Windows user name. After you create the user account, you won't be prompted for your password when using the distribution, unless you elevate a process by using the sudo command. Sudo stands for "SuperUser Do" and is used for any task requiring root admin privilege, like installing tools or frameworks.
 
 ### Update your distribution
 
-{% highlight Powershell %}
+````bash
 sudo apt update && sudo apt upgrade
-{% endhighlight %}
+````
 
 ## Use Linux commands and work across Windows and Linux file systems
 
@@ -59,14 +58,3 @@ Now if you're using PowerShell and enter wsl, you'll open a Debian distribution 
 5. If you no longer want the Debian distribution installed on your computer, you can unregister it by using wslconfig.exe /unregister Debian.
 
 Note that when you unregister a Linux distribution, all data, settings, and software associated with that distribution will be permanently lost. Reinstalling from Microsoft Store will install a clean copy.
-
-
-- Tintin
-  - A reporter
-- Has poofy orange hair
-  - Friends with the world's most awesome dog
-- Haddock
-  - A sea captain
-  - Has a fantastic beard
-  - Loves whiskey
-    - Possibly also scotch?
