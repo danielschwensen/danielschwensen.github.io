@@ -26,7 +26,8 @@ After the Linux distribution has installed, open it. You can do this by entering
 
 **Note**
 
-You can choose any user name and password. They have no bearing on your Windows user name. After you create the user account, you won't be prompted for your password when using the distribution, unless you elevate a process by using the sudo command. Sudo stands for "SuperUser Do" and is used for any task requiring root admin privilege, like installing tools or frameworks.
+{: .box-note}
+**Note:** You can choose any user name and password. They have no bearing on your Windows user name. After you create the user account, you won't be prompted for your password when using the distribution, unless you elevate a process by using the sudo command. Sudo stands for "SuperUser Do" and is used for any task requiring root admin privilege, like installing tools or frameworks.
 
 ### Update your distribution
 
