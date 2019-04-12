@@ -5,11 +5,14 @@ date: 2019-04-07
 categories: blog development windows linux
 tags: Linux Windows
 ---
+
 1. To enable Windows Subsystem for Linux (WSL) on your computer, you need to run the following powershell command as an admin:
+
 
 ````powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ````
+
 
 2. Restart your computer when prompted
 
@@ -29,9 +32,11 @@ After the Linux distribution has installed, open it. You can do this by entering
 
 ### Update your distribution
 
+
 ````bash
 sudo apt update && sudo apt upgrade
 ````
+
 
 ## Use Linux commands and work across Windows and Linux file systems
 
