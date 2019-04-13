@@ -36,7 +36,7 @@ After the Linux distribution has installed, open it. You can do this by entering
 
 
 ````bash
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 ````
 
 
