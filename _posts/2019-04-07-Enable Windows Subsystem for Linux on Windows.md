@@ -6,6 +6,8 @@ categories: blog development windows linux
 tags: Linux Windows
 ---
 
+The Windows Subsystem for Linux lets developers run a Linux environment - including most command-line tools, utilities, and applications - directly on Windows, unmodified, without the overhead of a virtual machine.
+
 1. To enable Windows Subsystem for Linux (WSL) on your computer, you need to run the following powershell command as an admin:
 
 
