@@ -24,9 +24,9 @@ description: description
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+  #Resources:
+  #  - Learn markdown: "http://www.markdowntutorial.com/"
+  #  - GitHub Pages: "https://pages.github.com/"
 #  Author's home: "https://danielschwensen.github.io"
 
 # Image to show in the navigation bar - image must be a square (width = height)
