@@ -52,7 +52,7 @@ Codename:       bionic
 
 **hostnamectl**
 
-My favorite command **_hostnamectl_** runs only on **_systemd_** based Linux distributions.
+**_hostnamectl_** runs only on **_systemd_** based Linux distributions.
 
 ```
 $ hostnamectl
