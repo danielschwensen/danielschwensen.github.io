@@ -2,7 +2,7 @@
 layout: post
 title: "What Linux Distro Am I Running?"
 date: 2019-07-14
-categories: blog
+categories: blog linux
 tags: Linux
 ---
 If you work in a large company (and are more likely to work with Windows operating systems), you may end up on an unknown Linux system for troubleshooting purposes. To quickly find out which distribution is installed, the following commands may be helpful:
