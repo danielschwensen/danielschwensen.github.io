@@ -41,6 +41,8 @@ If you don't want to rely on files then you can use tools as well:
 
 **lsb_release**
 
+The **_lsb_release_** command gives LSB (Linux Standard Base) and distribution-specific information on the CLI.
+
 ```
 $ lsb_release -a
 No LSB modules are available.
@@ -65,4 +67,13 @@ $ hostnamectl
   Operating System: Ubuntu 18.04.2 LTS
             Kernel: Linux 4.15.0-1034-aws
       Architecture: x86-64
+```
+
+**uname*
+
+If you just want to print the kernal version.
+
+```
+$ uname -r
+4.19.57-v7+
 ```
