@@ -69,7 +69,7 @@ $ hostnamectl
       Architecture: x86-64
 ```
 
-**uname*
+**uname**
 
 If you just want to print the kernal version.
 
