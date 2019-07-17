@@ -6,7 +6,7 @@ categories: blog Raspberry_Pi
 tags: 
 ---
 
-# Backing up your Raspberry Pi to a computer using an SD Card Reader
+**Backing up your Raspberry Pi to a computer using an SD Card Reader**
 
 If, like me, you want to try out new software or install the latest operating system version directly, it makes a lot of sense to back up the SD card of your Raspberry Pi regularly so that the system can be restored quickly in case of an emergency.
 
