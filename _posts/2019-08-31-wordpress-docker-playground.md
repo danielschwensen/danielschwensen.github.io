@@ -21,9 +21,11 @@ Start Powershell, create a directory and install the docker-compose.yaml file fo
 
 You can get it via: 
 
-* `git clone https://github.com/danielschwensen/wordpress-docker-playground.git`
-<br>or
-* `wget -uri https://raw.githubusercontent.com/danielschwensen/wordpress-docker-playground/master/docker-compose.yaml -OutFile docker-compose.yaml`
+    git clone https://github.com/danielschwensen/wordpress-docker-playground.git
+    
+    or
+    
+    wget -uri https://raw.githubusercontent.com/danielschwensen/wordpress-docker-playground/master/docker-compose.yaml -OutFile docker-compose.yaml
 
 
 2. 
