@@ -6,8 +6,6 @@ categories: blog Wordpress Docker
 tags: docker wordpress docker-compose MySQL Powershell
 ---
 
-# Get a Docker based Wordpress playground in a heartbeat
-
 WordPress or PHP developers may find it difficult to do a fresh installation of WordPress and MySQL in a quick manner. This is where Docker comes to rescue. With Docker, one can quickly commission and de-commission a WordPress & MySQL development environment in no time.
 
 ## Requirements
