@@ -5,7 +5,8 @@ date: 2019-08-31
 categories: blog Wordpress Docker 
 tags: docker wordpress docker-compose MySQL Powershell
 ---
-WordPress or PHP developers may find it difficult to do a fresh installation of WordPress and MySQL in a quick manner. This is where Docker comes to rescue. With Docker, one can quickly commission and de-commission a WordPress & MySQL development environment in no time.
+Do you want to test the latest Wordpress version (including plug-ins and themes) without having to install a full development environment (Apache, MySQL,PHP etc.)?
+If so, then Docker offers a simple solution to quickly commission and de-commission a WordPress & MySQL development environment in no time.
 
 ## Requirements
 
