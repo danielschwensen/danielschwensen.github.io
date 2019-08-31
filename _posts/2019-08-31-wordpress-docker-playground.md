@@ -36,7 +36,7 @@ Start the show by running the command `docker-compose up`.
 
 This will launch the two containers and link them together. You will see logging to your terminal window. You can press Ctrl+C to stop the containers and get your command prompt back. To launch the containers in the background add a "-d".
 
-3.
+3. 
 Connect to your new WordPress server at http://localhost:8080/
 
 That's it.
