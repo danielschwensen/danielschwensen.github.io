@@ -25,6 +25,7 @@ You can get it via:
 <br>or
 * `wget -uri https://raw.githubusercontent.com/danielschwensen/wordpress-docker-playground/master/docker-compose.yaml -OutFile docker-compose.yaml`
 
+
 2. 
 Start the show by running the command `docker-compose up`.
 
@@ -32,8 +33,6 @@ This will launch the two containers and link them together. You will see logging
 
 3.
 Connect to your new WordPress server at http://localhost:8080/
-
-![01]({{ "/assets/2019\08\2019-08-31_13-29-55.mp4" | absolute_url }})
 
 That's it.
 
