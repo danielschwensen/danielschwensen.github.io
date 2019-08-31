@@ -24,8 +24,11 @@ You can get it via:
     git clone https://github.com/danielschwensen/wordpress-docker-playground.git
     
     or
-    
+
     wget -uri https://raw.githubusercontent.com/danielschwensen/wordpress-docker-playground/master/docker-compose.yaml -OutFile docker-compose.yaml
+
+
+
 
 
 2. 
