@@ -3,7 +3,7 @@ layout: post
 title: "Get a Docker based Wordpress playground in a heartbeat"
 date: 2019-08-31
 categories: blog Wordpress Docker 
-tags: docker wordpress docker-compose MySQL Powershell
+tags: Docker Wordpress docker-compose MySQL Powershell
 ---
 Do you want to test the latest Wordpress version (including plug-ins and themes) without having to install a full development environment (Apache, MySQL,PHP etc.)?
 If so, then Docker offers a simple solution to quickly commission and de-commission a WordPress & MySQL development environment in no time.

@@ -3,7 +3,7 @@ layout: post
 title: "How to Backup your Raspberry Pi SD Card on Windows?"
 date: 2019-07-17
 categories: blog Raspberry_Pi 
-tags: 
+tags: Raspberry_Pi
 ---
 
 **Backing up your Raspberry Pi to a computer using an SD Card Reader**
