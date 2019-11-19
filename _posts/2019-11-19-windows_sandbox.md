@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enable Windows 10 Sandbox with PowerShell"
+title: "Enable Windows Sandbox with PowerShell"
 date: 2019-11-19
 categories: blog Windows
 tags: Powershell Windows
