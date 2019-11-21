@@ -5,13 +5,13 @@ date: 2019-11-21
 categories: blog Windows
 tags: Powershell Windows
 ---
-Powershell 
+**Powershell** 
 
 ````powershell  
 gci $env:Windir\Microsoft.Net\framework | Where {$_.Mode -match "d"} | ft -auto
 ````
 
-Registry Editor
+**Registry Editor**
 
 To find .NET Framework versions by viewing the registry (.NET Framework 1-4)
 
