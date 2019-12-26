@@ -3,12 +3,12 @@ layout: post
 title: "Make your terminal look great again"
 date: 2019-12-26
 categories: blog Windows
-tags: Powershell Windows Terminal
+tags: Powershell Windows terminal posh-git oh-my-posh GoMono nerdfonts
 ---
 
-![Windows Terminal]({{ "/assets/2019/12/WindowsTerminal.png" | absolute_url }})
+If you want to make your Windows Terminal look great again then this brief article is for you.
 
-If you want to look your Windows Terminal like this then you need to do the following:
+![Windows Terminal]({{ "/assets/2019/12/WindowsTerminal.png" | absolute_url }})
 
 Install posh-git and oh-my-posh:
 
