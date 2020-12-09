@@ -65,7 +65,7 @@ var main = {
     }
 
     // show the big header image
-    ////main.initImgs();
+    main.initImgs();
   },
 
   initImgs : function() {
