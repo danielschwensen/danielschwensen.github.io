@@ -2,7 +2,7 @@
 layout: post
 title: "How to determine all installed .Net versions"
 date: 2019-11-21
-categories: blog Windows
+categories: OS Scripting
 tags: Powershell Windows
 ---
 **Powershell** 

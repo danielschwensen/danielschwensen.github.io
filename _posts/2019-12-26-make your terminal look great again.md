@@ -2,7 +2,7 @@
 layout: post
 title: "Make your terminal look great again"
 date: 2019-12-26
-categories: blog Windows
+categories: OS Scripting
 tags: Powershell Windows terminal posh-git oh-my-posh GoMono nerdfonts
 ---
 
