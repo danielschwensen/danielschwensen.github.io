@@ -3,7 +3,7 @@ layout: post
 title: "Install and configure AWS CLI on CentOS"
 date: 2020-12-10
 categories: Cloud OS
-tags: AWS CentOS CLI Linux
+tags: AWS CentOS CLI Linux install
 ---
 
 # Linux Install
