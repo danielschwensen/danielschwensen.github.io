@@ -10,10 +10,10 @@ When working with file names, it is sometimes necessary to extract the individua
 
 The following examples are mostly based on the $PROFILE path
 
-```powershell
+````powershell 
 ❯ $PROFILE
 F:\OneDrive\Dokumente\PowerShell\Microsoft.PowerShell_profile.ps1
-```
+````
 
 Default Split-Path command retrieves the parent folder name of the file.
 
