@@ -14,6 +14,7 @@ The corresponding Powershell cmdlets can be retrieved with the following command
 Get-Command -Module Storage -Name Get*
 ````
 
+
 * **Get-PhysicalDisk** allows you to get information about physical disks, device characteristics. 
 * **Get-Disk display** gets disk information at the logical level of the operating system. 
 * **Get-Partition** shows partition information on all drives. 
