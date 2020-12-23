@@ -15,7 +15,7 @@ Get-Command -Module Storage -Name Get*
 ````
 
 
-* **Get-PhysicalDisk** allows you to get information about physical disks, device characteristics. 
+* **Get-PhysicalDisk** allows you to get information about physical disks and device characteristics. 
 * **Get-Disk display** gets disk information at the logical level of the operating system. 
 * **Get-Partition** shows partition information on all drives. 
 * **Get-Volume** displays volume information on all disks.
