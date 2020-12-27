@@ -31,7 +31,7 @@ It will do the following steps to ensure the operating system shutdowns graceful
 
 1. Start _win32diskimager_
 2. Define Image File like _MyPiBacku.img_
-3. Select Device (choose the device which includes the boot files, if you have different partitions) 
+3. Select Device (if your Pi has multiple partitions, select the first one -the process will still clone the full SD card and not just the single partition) 
 4. Click on Read (this step can take some time)
 
 That's it. The restore process is - you guessed it - just the other way around
