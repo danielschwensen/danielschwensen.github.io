@@ -17,7 +17,11 @@ baseurl: ""
 title: My Personal Notes
 
 # Short description of your site
+<<<<<<< HEAD
 description: This is mostly about Powershell. 
+=======
+description: This blog is mainly for the documentation of stuff I was playing around with.
+>>>>>>> 37e7704b7e1fe48ba75573ec33ce0d1f99810f5c
 
 # --- Navigation bar options --- #
 

@@ -6,4 +6,4 @@ subtitle: Why you'd want ...
 
 I’m Daniel
 
-I created this blog mainly for the purpose of documenting. 
+I created this blog is mainly for the purpose of documenting.
