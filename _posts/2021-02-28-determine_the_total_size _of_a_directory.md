@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to determine the total size of a directory (folder) from the command line"
+title: "How to determine the total size of a directory from the command line"
 date: 2021-02-28
 categories: blog linux
 tags: Linux du cli
