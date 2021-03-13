@@ -7,7 +7,6 @@ tags: Google search
 ---
 The Google search operators are special search commands, sometimes called advanced operators, that allow you to set specific restrictions or get specific types of results from your Google search. Once you’ve mastered just a few of these special commands, you’ll wonder how you ever managed without them.
 
-
 Use the Keyword **related:** to find similar websites.
 
 ```
