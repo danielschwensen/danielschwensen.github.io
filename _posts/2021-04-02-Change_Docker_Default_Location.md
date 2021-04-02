@@ -37,28 +37,20 @@ Default location: %LOCALAPPDATA%/Docker 
  
 1. Stop Docker
 2. Shutdown all WSL distros
- 
 ```
 wsl --shutdown
 ```
- 
 3. Export docker-desktop-data to tar file
- 
 ```
 wsl --export docker-desktop-data D:\docker-desktop-data.tar
 ```
- 
 4. Unregister current docker-desktop-data distro
- 
 ```
 wsl --unregister docker-desktop-data
 ```
- 
 5. Import docker-desktop-data distro from tar file
- 
 ```
 wsl --import docker-desktop-data D:\Docker_WSL\data D:\docker-desktop-data.tar --version 2
 ```
- 
 6. Start Docker
 7. Remove D:\docker-desktop-data.tar (if the import was successful)
