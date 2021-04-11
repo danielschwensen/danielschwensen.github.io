@@ -64,3 +64,6 @@ Now if you're using PowerShell and enter wsl, you'll open a Debian distribution 
 5. If you no longer want the Debian distribution installed on your computer, you can unregister it by using wslconfig.exe /unregister Debian.
 
 Note that when you unregister a Linux distribution, all data, settings, and software associated with that distribution will be permanently lost. Reinstalling from Microsoft Store will install a clean copy.
+
+Related article
+[WSL - Upgrade Ubuntu to the latest release](https://danielschwensen.github.io/2021-04-11-WSL_Upgrade_Ubuntu_to_the_latest_release/) 
