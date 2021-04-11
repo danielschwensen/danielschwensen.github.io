@@ -5,7 +5,7 @@ date: 2021-04-11
 categories: OS
 tags: Linux WSL Ubuntu
 ---
-Even if you use the distro apps for WSL you can upgrade to the latest release.
+Even if you use the distro apps for [WSL](https://danielschwensen.github.io/2019-04-07-Enable-Windows-Subsystem-for-Linux-on-Windows/) you can upgrade to the latest release.
 
 The following steps did the trick:
 
