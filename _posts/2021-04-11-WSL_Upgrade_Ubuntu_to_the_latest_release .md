@@ -3,7 +3,7 @@ layout: post
 title: "WSL - Upgrade Ubuntu to the latest release "
 date: 2021-04-11
 categories: OS
-tags: Linux WSL Ubuntu
+tags: Linux WSL Ubuntu install
 ---
 Even if you use the distro apps for [WSL](https://danielschwensen.github.io/2019-04-07-Enable-Windows-Subsystem-for-Linux-on-Windows/) you can upgrade to the latest release.
 
