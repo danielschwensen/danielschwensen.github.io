@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to uninstall the Cortana app"
+title: "How to uninstall the Cortana app with Powershell"
 date: 2021-06-04
 categories: blog Windows
 tags: Windows Powershell
