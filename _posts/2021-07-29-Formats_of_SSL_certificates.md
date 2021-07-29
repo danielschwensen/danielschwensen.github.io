@@ -21,7 +21,7 @@ The most commonly used extension of the format is .pfx and .p12.
 PKCS#12 is often used on the Windows devices for importing and exporting the certificates together with the private key.
 The certificates stored in PFX are also used for signing in Microsoft Authenticode.
 
-**PEM format****
+**PEM format**
 
 This is the most widely used format for storing certificates. The majority of servers - e.g. Apache - work with the private key and the certificate in separate, independent files. We can often hear about the PEM certificate as the "text format" because it is encoded in Base64.
 It is a format encoded in Base64 with ASCII characters.
