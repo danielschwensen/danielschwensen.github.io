@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "AWS Presigned URL"
+title: "AWS S3 Presigned URL"
 date: 2021-09-28
 categories: Cloud
 tags: AWS S3 CLI
 ---
 
-If you want to provide temporary access to an object that is otherwise private, then you can generate a presigned URL. The URL will be usable for a specified period of time, after which it will become invalid. 
+If you want to provide temporary S3 access to an object that is otherwise private, then you can generate a presigned URL. The URL will be usable for a specified period of time, after which it will become invalid.
 
 The following AWS CLI command will return a URL that includes the required authentication string. The authentication will become invalid after 10 minutes. The default expiration value is 3600 seconds.
 
