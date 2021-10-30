@@ -38,4 +38,5 @@ mbr2gpt /convert
 After converting, restart your system and change your motherboard firmware settings from Legacy BIOS to UEFI.
 
 More detailed information:
+
 https://docs.microsoft.com/de-de/windows/deployment/mbr-to-gpt
