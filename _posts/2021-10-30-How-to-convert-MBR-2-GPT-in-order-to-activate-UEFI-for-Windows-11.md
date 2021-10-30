@@ -39,4 +39,4 @@ After converting, restart your system and change your motherboard firmware setti
 
 More detailed information:
 
-https://docs.microsoft.com/de-de/windows/deployment/mbr-to-gpt
+`https://docs.microsoft.com/de-de/windows/deployment/mbr-to-gpt`
