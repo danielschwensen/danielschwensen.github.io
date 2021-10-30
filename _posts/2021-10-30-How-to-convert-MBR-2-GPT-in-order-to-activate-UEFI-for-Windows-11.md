@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to convert MBR 2 GPT in order to activate UEFI for Windows 11"
-date: 2021-10.30
+date: 2021-10-30
 categories: OS
 tags: Windows
 ---
