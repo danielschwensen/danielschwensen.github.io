@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to connect to EC2 via SSH + troubleshooting"
+title: "How to connect to an EC2 via SSH + troubleshooting"
 date: 2021-11-30
 categories: blog AWS
 tags: Linux AWS EC2 SSH
