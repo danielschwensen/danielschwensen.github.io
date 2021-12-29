@@ -3,7 +3,7 @@ layout: post
 title: "Install and Configure the AWS CLI on Windows"
 date: 2021-12-29
 categories: blog AWS
-tags: AWS CLI
+tags: AWS CLI Windows install
 ---
 # Installation
 
