@@ -5,7 +5,7 @@ date: 2022-02-27
 categories: blog OS tools
 tags: Linux Windows cpu Sysinternals
 ---
-There are many reasons why you may want to stress test the CPU on your system. You may want to see how your operating system and hardware perform when you are at full CPU utilization or if you want to trigger resource monitoring alerts.
+There are many reasons why you may want to stress test the CPU on your system. You may want to see how your operating system and hardware perform when you are at full CPU utilization or you want to trigger resource monitoring alerts.
 
 # Linux
 
