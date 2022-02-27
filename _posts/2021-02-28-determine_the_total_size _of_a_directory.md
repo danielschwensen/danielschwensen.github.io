@@ -2,7 +2,7 @@
 layout: post
 title: "How to determine the total size of a directory from the command line"
 date: 2021-02-28
-categories: blog linux
+categories: blog OS
 tags: Linux du cli
 ---
 The command du "summarizes disk usage of each FILE, recursively for directories," e.g.

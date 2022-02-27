@@ -2,7 +2,7 @@
 layout: post
 title: "How to uninstall the Cortana app with Powershell"
 date: 2021-06-04
-categories: blog Windows
+categories: blog OS
 tags: Windows Powershell
 ---
 - Open the Start Menu and type in PowerShell.
