@@ -5,8 +5,6 @@ date: 2022-07-31
 categories: blog windows
 tags: Windows
 ---
-# My favorite Windows 10 keyboard shortcuts
-
 ## Windows File Explorer
 
 Open Windows Explorer
