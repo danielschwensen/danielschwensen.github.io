@@ -4,7 +4,7 @@ title: About me
 ---
 I’m Daniel.
 
-I created this blog as a way to document the various IT-related things I spend my time on - if time permits.
+I created this blog as a way to document the various IT-related things I spend my time on.
 
 I am an IT professional who likes exploring new technologies, learning new skills, or working on projects, I find great fulfillment in staying up-to-date and constantly learning in the field of IT. 
 
