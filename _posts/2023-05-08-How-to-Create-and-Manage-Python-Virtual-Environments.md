@@ -33,7 +33,7 @@ python -m venv myenv
 ```
    myenv\Scripts\activate
 ```
-1. On Linux or macOS, run:
+- On Linux or macOS, run:
 ```
 source myenv/bin/activate
 ```
