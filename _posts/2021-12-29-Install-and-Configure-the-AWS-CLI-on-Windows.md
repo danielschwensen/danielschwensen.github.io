@@ -5,8 +5,6 @@ date: 2021-12-29
 categories: blog AWS
 tags: AWS CLI Windows install
 ---
-# Installation
-
 Open the command prompt and run the following two commands:
 
 ```

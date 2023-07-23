@@ -5,8 +5,6 @@ date: 2022-01-31
 categories: blog
 tags: Homebrew macOS
 ---
-# Clean Up Old Homebrew Files
-
 Homebrew is a free, open-source software package management system that simplifies the installation of software on Apple’s macOS operating system and Linux.
 
 If you've been using Homebrew for a while, you may have built up some cruft in the form old and outdated files. These will not be cleaned up automatically. You have do tell Homebrew to do so. This can be done with the following command.

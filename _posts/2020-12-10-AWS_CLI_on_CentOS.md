@@ -5,9 +5,6 @@ date: 2020-12-10
 categories: Cloud OS
 tags: AWS CentOS CLI Linux install
 ---
-
-# Linux Install
-
 ````bash
 sudo yum install epel-release
 sudo yum install python-pip
