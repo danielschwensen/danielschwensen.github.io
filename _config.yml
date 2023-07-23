@@ -14,9 +14,10 @@ theme: minima
 
 permalink: /:year-:month-:day-:title/
 
-google_analytics: UA-124566147-1
+# google_analytics: UA-124566147-1
+google_analytics: G-P02V2NDLYK
 
-#gtag: "G-P02V2NDLYK"
+gtag: "G-P02V2NDLYK"
 
 
 plugins:
