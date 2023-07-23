@@ -5,8 +5,6 @@ date: 2023-03-23
 categories: Scripting
 tags: Powershell
 ---
-Introduction
-
 When working with PowerShell scripts, it's often necessary to use sensitive information like usernames and passwords to authenticate against various services or systems. However, storing these credentials in plain text is a security risk that should be avoided. In this blog post, we'll discuss how to securely store and use credentials in PowerShell without exposing them in plain text.
 
 Step 1: Encrypt and Store the Password
