@@ -5,9 +5,6 @@ date: 2018-02-09
 categories: blog development database
 tags: MySQL MariaDB Qnap install
 ---
-
-## MariaDB
-
 Install MariaDB via App Center
 
 ![MariaDB]({{ "/assets/2018-02-09-MariaDB.png" | absolute_url }})
