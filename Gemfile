@@ -1,10 +1,7 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-#gem "github-pages", '163', group: :jekyll_plugins
+source "https://rubygems.org"
+gemspec
 
-# enable tzinfo-data for local build
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'github-pages'
-gem 'jekyll_plugins'
-gem 'jekyll-paginate'
-gem 'jekyll-sitemap'
+gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
+gem "kramdown-parser-gfm" if ENV["JEKYLL_VERSION"] == "~> 3.9"
