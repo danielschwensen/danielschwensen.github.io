@@ -5,6 +5,8 @@ date: 2022-07-31
 categories: blog windows
 tags: Windows
 ---
+In today's fast-paced digital era, saving a few seconds here and there can accumulate to significant time savings over the long run. One way to achieve this is by mastering keyboard shortcuts. Whether you're an avid Windows 10 user looking to boost your productivity or someone new wanting a crash course on the most effective shortcuts, this post is for you. Dive into my handpicked list of favorite Windows 10 shortcuts, from simplifying your file management in the Windows File Explorer to browsing the web more efficiently. Let's streamline your tasks and make every keystroke count!
+
 ## Windows File Explorer
 
 Open Windows Explorer
