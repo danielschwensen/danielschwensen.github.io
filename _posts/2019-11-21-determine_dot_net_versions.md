@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "How to determine all installed .Net versions"
+title: "A Quick Guide to Identifying Installed .NET Framework Versions"
 date: 2019-11-21
 categories: OS Scripting
 tags: Powershell Windows
 ---
+As developers, understanding which versions of the .NET Framework are installed on a system can be crucial for various tasks. Whether you're debugging, deploying, or setting up a new environment, knowing the exact versions at hand can save time and prevent compatibility issues. Following two simple methods – using Powershell and the Registry Editor – to help you pinpoint all the .NET versions installed on your machine.
+
 **Powershell** 
 
 ````powershell  
