@@ -12,6 +12,8 @@ description: >
 
 theme: minima
 
+permalink: /:year-:month-:day-:title/
+
 gtag: "G-P02V2NDLYK"
 
 plugins:
