@@ -12,9 +12,12 @@ description: >
 
 theme: minima
 
+gtag: "G-P02V2NDLYK"
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Theme-specific settings
 
