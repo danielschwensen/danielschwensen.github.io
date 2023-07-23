@@ -5,7 +5,7 @@ date: 2018-08-26
 categories: blog development DevOps
 tags: Packer code Linux install
 ---
-(I am working with CentOS 7)
+For those venturing into the world of automated machine image creation, HashiCorp's Packer offers a versatile tool to make the process efficient and consistent. While there are various operating systems and platforms on which one might install Packer, this post specifically focuses on CentOS 7.
 
 Requirements:
 - unzip
