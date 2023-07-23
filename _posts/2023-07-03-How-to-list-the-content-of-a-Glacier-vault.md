@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to list the content of a Glacier vault?"
-date: 2023-07.03
+date: 2023-07-03
 categories: Cloud
 tags: AWS Glacier CLI
 ---
