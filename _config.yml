@@ -6,7 +6,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  This blog is mainly for the documentation of stuff I was playing around with - mostly Powershell.
+  This blog is mainly for the documentation of stuff I was playing around with - mostly Powershell and AWS.
 
 # Build settings
 
