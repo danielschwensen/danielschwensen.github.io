@@ -5,6 +5,7 @@ date: 2018-08-25
 categories: blog development DevOps
 tags: Vagrant code Linux install
 ---
+The world of virtualization offers countless possibilities, allowing developers and system administrators to replicate environments, test software configurations, and more, all without needing physical machines. One of the most powerful tools in this space is Vagrant. Although it’s primarily used for provisioning and managing virtual machines (VMs), a frequently asked question is: How do you create your own Vagrant box? In this blog post, we'll be diving deep into this topic. Starting with the basics, we will craft a custom Vagrant box using VirtualBox and an Ubuntu 18.04, Bionic Beaver base image. Whether you're new to Vagrant or looking to expand your toolkit, this step-by-step guide will walk you through the process from start to finish.
 
 ## Requirements
 
