@@ -14,7 +14,10 @@ theme: minima
 
 permalink: /:year-:month-:day-:title/
 
-gtag: "G-P02V2NDLYK"
+google_analytics: UA-124566147-1
+
+#gtag: "G-P02V2NDLYK"
+
 
 plugins:
   - jekyll-feed
