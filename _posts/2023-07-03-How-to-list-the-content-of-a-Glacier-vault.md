@@ -5,7 +5,9 @@ date: 2023-07-03
 categories: Cloud
 tags: AWS Glacier CLI
 ---
-You need to initiate a job to retrieve an inventory of a vault.
+Want a quick look at what's inside your AWS Glacier vault? Retrieving an inventory is easier than you might think. This post walks you through the simple steps to initiate an inventory-retrieval job and download your vault's contents.
+
+First you need to initiate a job to retrieve an inventory of a vault.
 
 Here is the general process:
 
