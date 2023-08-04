@@ -67,7 +67,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 
 ### **MindMap**
 
-![PSReadLineMindMap]({{ "/assets/2023/PSReadLine.svg" | absolute_url }})
+![PSReadLineMindMap]({{ "/assets/2023/PSReadLineMindmap.png" | absolute_url }})
 
 ### **Conclusion**
 
