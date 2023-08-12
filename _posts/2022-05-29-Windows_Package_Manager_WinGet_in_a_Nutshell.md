@@ -34,7 +34,7 @@ winget upgrade <package name>
 How to update all packages
 
 ```
-winget upgrade -all
+winget upgrade --all
 ```
 
 Export Installed Software list
