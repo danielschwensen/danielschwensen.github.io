@@ -5,12 +5,11 @@ date: 2019-07-17
 categories: blog Raspberry_Pi 
 tags: Raspberry_Pi
 ---
-
-**Backing up your Raspberry Pi to a computer using an SD Card Reader**
-
 If, like me, you want to try out new software or install the latest operating system version directly, it makes a lot of sense to back up the SD card of your Raspberry Pi regularly so that the system can be restored quickly in case of an emergency.
 
 By the way: The regular backup of the most important files is unaffected by this.
+
+**Backing up your Raspberry P**
 
 To back up our Raspberry Pi’s SD Card on Windows I recommend utilizing the imaging tool that is called [win32diskimager](https://sourceforge.net/projects/win32diskimager/).
 
