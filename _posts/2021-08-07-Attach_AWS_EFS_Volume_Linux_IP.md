@@ -5,7 +5,7 @@ date: 2021-08-07
 categories: blog linux
 tags: Linux AWS EFS NFS
 ---
-Attaching an AWS EFS volume is simple.
+Following a step-by-step process to attach an AWS EFS volume to a Linux system using an IP address.
 
 
 Check you current layout
