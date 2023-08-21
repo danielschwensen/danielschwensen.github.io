@@ -5,6 +5,8 @@ date: 2021-11-30
 categories: blog AWS
 tags: Linux AWS EC2 SSH
 ---
+This note we will outline the steps to ensure a successful connection to your EC2 instance through SSH, as well as mention common troubleshooting techniques.
+
 In general:
 * Make sure the private key (pem file) on your Linux machine has 400 permissions or you will get an "Unprotected private key file" error.
 * Make sure the username is given correctly when connecting via SSH, else you will get "Host key not found", "Permission denied", or "Connection closed" error.
