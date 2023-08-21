@@ -5,6 +5,8 @@ date: 2018-02-09
 categories: blog development database
 tags: MySQL MariaDB Qnap install
 ---
+This note covers the necessary steps to get started, including the installation of MariaDB via the App Center, enabling MySQL, and setting up default username and password. Whether you're planning to administer your databases through phpMyAdmin or Workbench, this guide will provide you with a step-by-step instructions.
+
 Install MariaDB via App Center
 
 ![MariaDB]({{ "/assets/2018-02-09-MariaDB.png" | absolute_url }})
