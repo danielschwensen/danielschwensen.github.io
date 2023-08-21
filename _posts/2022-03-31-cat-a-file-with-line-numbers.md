@@ -5,7 +5,9 @@ date: 2022-03-31
 categories: blog tools
 tags: Linux cat
 ---
-On Linux you can use <code>cat</code> to view a file.
+You can use the <code>cat</code> command to view files, add line numbers with the '-n' flag and concatenate several files together. It's one of those simple tools that makes Linux so versatile.
+
+Use <code>cat</code> to view a file.
 
 ```
 daniel@CShark:/mnt/d$ cat index.html
@@ -43,3 +45,6 @@ daniel@CShark:/mnt/d$ cat -n index.html
     13  </div>
     14  </body>
 ```
+Use <code>cat file1.txt file2.txt</code> if you want to view them as a single continuous file.
+
+Use <code>cat file1.txt file2.txt > combined.txt</code> if you want to create a new file with both of them combined.
