@@ -9,8 +9,6 @@ If, like me, you want to try out new software or install the latest operating sy
 
 By the way: The regular backup of the most important files is unaffected by this.
 
-**Backing up your Raspberry P**
-
 To back up our Raspberry Pi’s SD Card on Windows I recommend utilizing the imaging tool that is called [win32diskimager](https://sourceforge.net/projects/win32diskimager/).
 
 Win32diskimager is a useful tool that can read and write images to USB Sticks or SD/CF Cards.
