@@ -11,7 +11,7 @@ Download Git: Visit the official Git website at git-scm.com to download the late
 
 ![Git Bash 1]({{ "/assets/2023/Git-01.png" | absolute_url }})
 
-![Git Bash 2]({{ "/assets/2223/Git-02.png" | absolute_url }})
+![Git Bash 2]({{ "/assets/2023/Git-02.png" | absolute_url }})
 
 ![Git Bash 3]({{ "/assets/2023/Git-03.png" | absolute_url }})
 
