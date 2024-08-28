@@ -2,7 +2,7 @@
 layout: post
 title: "Change Docker Default Location"
 date: 2021-04-02
-categories: developmen OS
+categories: development OS
 tags: Docker WSL Windows
 ---
 Docker Desktop for Windows is great since you can switch between Linux and Windows seamlessly.
