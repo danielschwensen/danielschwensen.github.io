@@ -5,7 +5,8 @@ date: 2024-09-12
 categories: Scripting
 tags: Powershell
 ---
-Do you need to change the creation timestamps of JPG files? PowerShell offers a quick and efficient way to do this. Here’s a step-by-step guide on how to achieve this.
+Do you need to change the creation timestamps of JPG files? 
+PowerShell offers a quick and efficient way to do this.
 
 ```
 $targetPath = "F:\Downloads\Target"
