@@ -5,6 +5,8 @@ date: 2024-11-17
 categories: blog linux
 tags: Linux shell bash
 ---
+How to check which shell I'm using and where the important config files are located. 
+
 # Which shell am I using?
 
 
