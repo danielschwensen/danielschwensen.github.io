@@ -8,7 +8,7 @@ tags: Homebrew macOS
 
 Homebrew is a free and open-source package manager that simplifies the installation of software on macOS and Linux.  It allows users to install, update, and manage software packages directly from the command line, making it easier to handle dependencies and maintain system cleanliness. 
 
-Installing Homebrew on macOS 13 Ventura
+# Installing Homebrew on macOS 13 Ventura
 
 To install Homebrew on macOS 13 Ventura, follow these steps:
 Install Xcode Command Line Tools: Execute: 
@@ -68,13 +68,13 @@ depending on your shell.
 
 By following these steps, Homebrew will be added to your PATH, ensuring that you can use the brew command and access the software installed via Homebrew seamlessly.
 
-Verify Installation: After installation, confirm that Homebrew is set up correctly by running:
+# Verify Installation: After installation, confirm that Homebrew is set up correctly by running:
 ```
 brew doctor
 ```
 If everything is properly installed, you’ll see the message “Your system is ready to brew.”
 
-Uninstalling Homebrew
+# Uninstalling Homebrew
 
 If you need to uninstall Homebrew, execute the following command in Terminal:
 ```
