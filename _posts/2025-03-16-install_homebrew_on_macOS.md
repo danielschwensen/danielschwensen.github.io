@@ -68,7 +68,9 @@ depending on your shell.
 
 By following these steps, Homebrew will be added to your PATH, ensuring that you can use the brew command and access the software installed via Homebrew seamlessly.
 
-# Verify Installation: After installation, confirm that Homebrew is set up correctly by running:
+# Verify Installation
+
+After installation, confirm that Homebrew is set up correctly by running:
 ```
 brew doctor
 ```
