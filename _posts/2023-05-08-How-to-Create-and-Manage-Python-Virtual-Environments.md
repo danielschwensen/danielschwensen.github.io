@@ -26,7 +26,7 @@ Follow these steps to create a new virtual environment:
 2. Navigate to the directory where you want to create the virtual environment.
 3. Run the following command, replacing myenv with your desired environment name:
 ```   
-python -m venv myenv
+python -m venv .venv
 ```
 4. Activate the virtual environment:
 - On Windows, run:
@@ -41,20 +41,36 @@ After activation, your terminal or command prompt will display the virtual envir
 
 Managing packages in a virtual environment:
 
-With your virtual environment activated, you can install packages using pip. For example, to install a specific version of a package, run:
+Update your virtual environment's package manager (pip) to the latest version by running:
+
+```
+python -m pip install --upgrade pip
+```
+
+
+Install a specific version of a package, run:
 
 ```
 pip install package_name==version_number
+```
+
+Or use a requirements file to install multiple packages at once:
 
 ```
+pip install -r requirements.txt
+```
+
 To generate a list of installed packages and their versions, run:
 
 ```
 pip freeze > requirements.txt
-
 ```
 
-This creates a requirements.txt file, which you can share with others to ensure they have the same development environment.
+To generate a list of installed packages without their versions, run:
+
+```
+pip freeze --local | % { $_ -replace '==.*','' } | Set-Content requirements.txt
+```
 
 Deactivating the virtual environment:
 
