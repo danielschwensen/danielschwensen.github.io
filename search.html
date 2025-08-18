@@ -5,6 +5,7 @@ permalink: /search.html
 ---
 
 <h1>Suchergebnisse</h1>
+<input type="text" id="search-input" style="display:none;">
 <div id="search-results">
   <p>Bitte geben Sie einen Suchbegriff ein.</p>
 </div>
@@ -18,9 +19,11 @@ permalink: /search.html
   }
   var query = getQueryParam('q');
   var resultsContainer = document.getElementById('search-results');
+  var input = document.getElementById('search-input');
   if (query) {
+    input.value = query;
     SimpleJekyllSearch({
-      searchInput: { value: query }, // Simuliert das Suchfeld
+      searchInput: input,
       resultsContainer: resultsContainer,
       json: '/search.json',
       searchResultTemplate: '<div style="margin-bottom:16px;"><a href="{url}" style="font-size:1.2em;color:#007acc;">{title}</a><br><span style="color:#555;">{date}</span></div>',
