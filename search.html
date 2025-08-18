@@ -1,0 +1,36 @@
+---
+layout: page
+title: Suche
+permalink: /search.html
+---
+
+<h1>Suchergebnisse</h1>
+<div id="search-results">
+  <p>Bitte geben Sie einen Suchbegriff ein.</p>
+</div>
+
+<!-- Simple-Jekyll-Search: Suchfunktion für die Suchseite -->
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+  function getQueryParam(param) {
+    var urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+  var query = getQueryParam('q');
+  var resultsContainer = document.getElementById('search-results');
+  if (query) {
+    SimpleJekyllSearch({
+      searchInput: { value: query }, // Simuliert das Suchfeld
+      resultsContainer: resultsContainer,
+      json: '/search.json',
+      searchResultTemplate: '<div style="margin-bottom:16px;"><a href="{url}" style="font-size:1.2em;color:#007acc;">{title}</a><br><span style="color:#555;">{date}</span></div>',
+      noResultsText: '<p>Keine Treffer gefunden.</p>',
+      limit: 50,
+      fuzzy: false,
+      debounceTime: 0,
+      success: function() {}
+    });
+  } else {
+    resultsContainer.innerHTML = '<p>Bitte geben Sie einen Suchbegriff ein.</p>';
+  }
+</script>
