@@ -17,6 +17,9 @@
           </span>
         </label>
 
+        <!-- Suchfeld für Blog-Suche -->
+  <input type="text" id="search-input" placeholder="Suche..." style="margin-right: 20px; padding: 4px 8px; border-radius: 4px; border: 1px solid #ccc;">
+  <ul id="results-container" style="position:absolute; background:white; z-index:1000; list-style:none; margin:0; padding:0; border:1px solid #ccc; width:300px; display:none;"></ul>
         <div class="trigger">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}

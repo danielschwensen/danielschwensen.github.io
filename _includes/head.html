@@ -10,5 +10,35 @@
   {%- endif -%}
 
   {%- include custom-head.html -%}
-  
+  <!-- Simple-Jekyll-Search: Suchfunktion für Blog -->
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li style="padding:8px;"><a href="{url}" style="color:#007acc;">{title}</a></li>',
+        noResultsText: '<li style="padding:8px;">Keine Treffer gefunden.</li>',
+        limit: 20,
+        fuzzy: false,
+        debounceTime: 300,
+        success: function() {
+          document.getElementById('results-container').style.display = 'block';
+        }
+      });
+      // Ergebnisse ausblenden, wenn das Suchfeld leer ist oder Fokus verliert
+      var input = document.getElementById('search-input');
+      var results = document.getElementById('results-container');
+      input.addEventListener('blur', function() {
+        setTimeout(function() { results.style.display = 'none'; }, 200);
+      });
+      input.addEventListener('input', function() {
+        if (!input.value) results.style.display = 'none';
+      });
+      input.addEventListener('focus', function() {
+        if (results.innerHTML) results.style.display = 'block';
+      });
+    });
+  </script>
 </head>
