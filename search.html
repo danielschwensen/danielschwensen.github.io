@@ -22,7 +22,8 @@ permalink: /search.html
   var input = document.getElementById('search-input');
   if (query) {
     input.value = query;
-    SimpleJekyllSearch({
+    // store instance in a variable so we can trigger a search programmatically
+    var sjSearch = SimpleJekyllSearch({
       searchInput: input,
       resultsContainer: resultsContainer,
       json: '/search.json',
@@ -33,6 +34,18 @@ permalink: /search.html
       debounceTime: 0,
       success: function() {}
     });
+
+    // Some browsers / library versions don't run an initial search automatically.
+    // Dispatch an input event to ensure the library performs the search immediately.
+    try {
+      var ev = new Event('input', { bubbles: true });
+      input.dispatchEvent(ev);
+    } catch (e) {
+      // fallback for older browsers
+      var ev2 = document.createEvent('Event');
+      ev2.initEvent('input', true, true);
+      input.dispatchEvent(ev2);
+    }
   } else {
     resultsContainer.innerHTML = '<p>Bitte geben Sie einen Suchbegriff ein.</p>';
   }
