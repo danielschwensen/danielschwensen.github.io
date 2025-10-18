@@ -37,6 +37,18 @@ How to update all packages
 winget upgrade --all
 ```
 
+List all packages
+
+```
+winget list
+```
+
+List packages that start with a specific string
+
+```
+winget list | Select-String "^(?i)N" #"The prefix (?i) makes the search case-insensitive, so both N and n are matched
+```
+
 Export Installed Software list
 
 ```
@@ -52,7 +64,19 @@ winget import -i <Path to JASON file>
 Search for packages
 
 ```
-winget install Netflix
+winget search Netflix
+```
+
+Install package
+
+```
+winget install <package name>
+```
+
+Uninstall package
+
+```
+winget uninstall <package name>
 ```
 
 Source: https://docs.microsoft.com/en-us/windows/package-manager/
