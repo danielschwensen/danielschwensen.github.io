@@ -23,7 +23,7 @@ permalink: /search.html
   var resultsContainer = document.getElementById('search-results');
   var input = document.getElementById('search-input');
 
-  // Initialize SimpleJekyllSearch
+  // Initialize SimpleJekyllSearch with success callback to handle URL query parameter
   var sjSearch = SimpleJekyllSearch({
     searchInput: input,
     resultsContainer: resultsContainer,
@@ -31,13 +31,13 @@ permalink: /search.html
     searchResultTemplate: '<div style="margin-bottom:16px;"><a href="{url}" style="font-size:1.2em;color:#007acc;">{title}</a><br><span style="color:#555;">{date}</span></div>',
     noResultsText: '<p>Keine Treffer gefunden.</p>',
     limit: 50,
-    fuzzy: false
+    fuzzy: false,
+    success: function () {
+      // Trigger search AFTER the JSON is loaded (this fixes the timing issue)
+      if (query) {
+        input.value = query;
+        sjSearch.search(query);
+      }
+    }
   });
-
-  // If we have a query parameter, set the input value and trigger search
-  if (query) {
-    input.value = query;
-    // Use the search method directly - this is the reliable way to trigger a search
-    sjSearch.search(query);
-  }
 </script>
