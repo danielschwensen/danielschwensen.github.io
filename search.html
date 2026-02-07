@@ -14,30 +14,37 @@ permalink: /search.html
 <!-- Simple-Jekyll-Search: Suchfunktion für die Suchseite -->
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 <script>
-  function getQueryParam(param) {
-    var urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-  }
-
-  var query = getQueryParam('q');
-  var resultsContainer = document.getElementById('search-results');
-  var input = document.getElementById('search-input');
-
-  // Initialize SimpleJekyllSearch with success callback to handle URL query parameter
-  var sjSearch = SimpleJekyllSearch({
-    searchInput: input,
-    resultsContainer: resultsContainer,
-    json: '/search.json',
-    searchResultTemplate: '<div style="margin-bottom:16px;"><a href="{url}" style="font-size:1.2em;color:#007acc;">{title}</a><br><span style="color:#555;">{date}</span></div>',
-    noResultsText: '<p>Keine Treffer gefunden.</p>',
-    limit: 50,
-    fuzzy: false,
-    success: function () {
-      // Trigger search AFTER the JSON is loaded (this fixes the timing issue)
-      if (query) {
-        input.value = query;
-        sjSearch.search(query);
-      }
+  (function () {
+    function getQueryParam(param) {
+      var urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
     }
-  });
+
+    var query = getQueryParam('q');
+    var resultsContainer = document.getElementById('search-results');
+    var input = document.getElementById('search-input');
+
+    // Set input value immediately if we have a query
+    if (query) {
+      input.value = query;
+    }
+
+    // Initialize SimpleJekyllSearch
+    SimpleJekyllSearch({
+      searchInput: input,
+      resultsContainer: resultsContainer,
+      json: '/search.json',
+      searchResultTemplate: '<div style="margin-bottom:16px;"><a href="{url}" style="font-size:1.2em;color:#007acc;">{title}</a><br><span style="color:#555;">{date}</span></div>',
+      noResultsText: '<p>Keine Treffer gefunden.</p>',
+      limit: 50,
+      fuzzy: false,
+      success: function () {
+        // Trigger search after JSON is loaded by dispatching an input event
+        if (query) {
+          var event = new Event('input', { bubbles: true });
+          input.dispatchEvent(event);
+        }
+      }
+    });
+  })();
 </script>
