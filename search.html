@@ -5,7 +5,8 @@ permalink: /search.html
 ---
 
 <h1>Suchergebnisse</h1>
-<input type="text" id="search-input" style="display:none;">
+<input type="text" id="search-input" placeholder="Suche..."
+  style="padding: 8px 12px; border-radius: 4px; border: 1px solid #ccc; width: 100%; max-width: 400px; margin-bottom: 20px;">
 <div id="search-results">
   <p>Bitte geben Sie einen Suchbegriff ein.</p>
 </div>
@@ -17,47 +18,26 @@ permalink: /search.html
     var urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
   }
+
   var query = getQueryParam('q');
   var resultsContainer = document.getElementById('search-results');
   var input = document.getElementById('search-input');
-  // Defensive: if the hidden page input is missing for any reason, try the header input
-  var headerInput = document.getElementById('site-search-input');
-  if (query) {
-    if (input) {
-      input.value = query;
-    } else if (headerInput) {
-      // copy header value into a temporary input so the library still works
-      input = document.createElement('input');
-      input.type = 'hidden';
-      input.id = 'search-input';
-      input.value = query || headerInput.value || '';
-      document.body.appendChild(input);
-    }
-    // store instance in a variable so we can trigger a search programmatically
-    var sjSearch = SimpleJekyllSearch({
-      searchInput: input,
-      resultsContainer: resultsContainer,
-      json: '/search.json',
-      searchResultTemplate: '<div style="margin-bottom:16px;"><a href="{url}" style="font-size:1.2em;color:#007acc;">{title}</a><br><span style="color:#555;">{date}</span></div>',
-      noResultsText: '<p>Keine Treffer gefunden.</p>',
-      limit: 50,
-      fuzzy: false,
-      debounceTime: 0,
-      success: function() {}
-    });
 
-    // Some browsers / library versions don't run an initial search automatically.
-    // Dispatch an input event to ensure the library performs the search immediately.
-    try {
-  var ev = new Event('input', { bubbles: true });
-  input.dispatchEvent(ev);
-    } catch (e) {
-      // fallback for older browsers
-      var ev2 = document.createEvent('Event');
-      ev2.initEvent('input', true, true);
-      input.dispatchEvent(ev2);
-    }
-  } else {
-    resultsContainer.innerHTML = '<p>Bitte geben Sie einen Suchbegriff ein.</p>';
+  // Initialize SimpleJekyllSearch
+  var sjSearch = SimpleJekyllSearch({
+    searchInput: input,
+    resultsContainer: resultsContainer,
+    json: '/search.json',
+    searchResultTemplate: '<div style="margin-bottom:16px;"><a href="{url}" style="font-size:1.2em;color:#007acc;">{title}</a><br><span style="color:#555;">{date}</span></div>',
+    noResultsText: '<p>Keine Treffer gefunden.</p>',
+    limit: 50,
+    fuzzy: false
+  });
+
+  // If we have a query parameter, set the input value and trigger search
+  if (query) {
+    input.value = query;
+    // Use the search method directly - this is the reliable way to trigger a search
+    sjSearch.search(query);
   }
 </script>
