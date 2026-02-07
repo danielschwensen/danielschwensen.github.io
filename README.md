@@ -2,23 +2,23 @@
 
 [https://danielschwensen.github.io](https://danielschwensen.github.io)
 
-Ein persönlicher Tech-Blog über PowerShell, AWS, Linux und mehr.
+A personal blog about PowerShell, AWS, Linux, and more.
 
-## 🚀 Entwicklung
+## 🚀 Development
 
-### Suche aktualisieren
-Die Suche basiert auf einer statischen `search.json`. Nach dem Erstellen eines neuen Posts muss der Index neu generiert werden:
+### Update Search
+The search is based on a static `search.json`. After creating a new post, the index must be regenerated:
 
 ```powershell
 .\scripts\generate-searchjson.ps1
 ```
 
-### Lokales Testen
+### Local Testing
 ```bash
 bundle exec jekyll serve
 ```
 
 ## 🛠️ Features
-- **Tag Cloud**: Dynamische Übersicht aller Themen
-- **Suche**: Client-seitige Suche via Javascript
-- **Theme**: Custom Minima mit SCSS Anpassungen
+- **Tag Cloud**: Dynamic overview of all topics
+- **Search**: Client-side search via JavaScript
+- **Theme**: Custom Minima with SCSS adjustments
