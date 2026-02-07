@@ -1,5 +1,3 @@
-# My Personal Notes - Daniel Schwensen
-
 [https://danielschwensen.github.io](https://danielschwensen.github.io)
 
 A personal blog about PowerShell, AWS, Linux, and more.
