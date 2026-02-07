@@ -1,2 +1,65 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+// Tag Cloud Styles
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, rgba(42, 122, 226, 0.03) 0%, rgba(106, 200, 200, 0.05) 100%);
+  border-radius: 8px;
+}
+
+.tag-cloud-item {
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+}
+
+// Size classes - smaller tags are lighter, larger are bolder
+.tag-size-1 {
+  font-size: 0.85rem;
+  color: #6ec8c8;  // Türkis - passt zum Bild
+  font-weight: 400;
+}
+
+.tag-size-2 {
+  font-size: 1.1rem;
+  color: #5ba3e0;  // Hellblau
+  font-weight: 400;
+}
+
+.tag-size-3 {
+  font-size: 1.4rem;
+  color: #3a9d5c;  // Grün
+  font-weight: 500;
+}
+
+.tag-size-4 {
+  font-size: 1.8rem;
+  color: #2a7ae2;  // Kräftiges Blau (Hauptfarbe der Seite)
+  font-weight: 500;
+}
+
+.tag-size-5 {
+  font-size: 2.3rem;
+  color: #1565c0;  // Dunkelblau
+  font-weight: 600;
+}
+
+// Hover effects with slightly different colors
+.tag-size-1:hover { color: #4db8b8; }
+.tag-size-2:hover { color: #3d8fd6; }
+.tag-size-3:hover { color: #2d8049; }
+.tag-size-4:hover { color: #1e5bb8; }
+.tag-size-5:hover { color: #0d47a1; }

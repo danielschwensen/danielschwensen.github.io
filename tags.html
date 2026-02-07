@@ -4,31 +4,63 @@ title: 'Tag Index'
 ---
 
 {%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
+{%- for tag in site.tags -%}
+{{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
+{%- comment -%} Calculate min and max tag counts for sizing {%- endcomment -%}
+{%- assign max_count = 1 -%}
 {%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+{%- assign tag_count = site.tags[tag].size -%}
+{%- if tag_count > max_count -%}
+{%- assign max_count = tag_count -%}
+{%- endif -%}
+{%- endfor -%}
+
+<!-- Tag Cloud -->
+<div class="tag-cloud">
+    {%- for tag in tags_list -%}
+    {%- assign tag_count = site.tags[tag].size -%}
+    {%- assign size_ratio = tag_count | times: 100 | divided_by: max_count -%}
+    {%- if size_ratio >= 80 -%}
+    {%- assign size_class = "tag-size-5" -%}
+    {%- elsif size_ratio >= 50 -%}
+    {%- assign size_class = "tag-size-4" -%}
+    {%- elsif size_ratio >= 30 -%}
+    {%- assign size_class = "tag-size-3" -%}
+    {%- elsif size_ratio >= 15 -%}
+    {%- assign size_class = "tag-size-2" -%}
+    {%- else -%}
+    {%- assign size_class = "tag-size-1" -%}
+    {%- endif -%}
+    <a href="#{{- tag -}}" class="tag-cloud-item {{ size_class }}">{{- tag -}}</a>
+    {%- endfor -%}
+</div>
+
+<h2 style="margin-top: 2rem;">Tag Index</h2>
+
+{%- for tag in tags_list -%}
+<a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{- tag
+    -}}&nbsp;({{site.tags[tag].size}})</a>
 {%- endfor -%}
 
 <div id="full-tags-list">
-{%- for tag in tags_list -%}
+    {%- for tag in tags_list -%}
     <h2 id="{{- tag -}}" class="linked-section">
         <i class="fa fa-tag" aria-hidden="true"></i>
         &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
     </h2>
     <div class="post-list">
         {%- for post in site.tags[tag] -%}
-            <div class="tag-entry">
-                <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%B %d, %Y" -}}</time>
-                </div>
+        <div class="tag-entry">
+            <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
+            <div class="entry-date">
+                <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%B %d, %Y" -}}</time>
             </div>
+        </div>
         {%- endfor -%}
     </div>
-{%- endfor -%}
+    {%- endfor -%}
 </div>
