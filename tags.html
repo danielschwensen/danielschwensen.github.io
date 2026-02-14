@@ -9,7 +9,7 @@ show_title: false
 {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 {%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
+{%- assign tags_list = site_tags | split:',' | sort_natural -%}
 
 {%- comment -%} Calculate min and max tag counts for sizing {%- endcomment -%}
 {%- assign max_count = 1 -%}
