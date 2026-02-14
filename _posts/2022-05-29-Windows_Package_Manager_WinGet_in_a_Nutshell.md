@@ -106,4 +106,23 @@ Remove a pin
 winget pin remove <package name>
 ```
 
+
+Customize Progress Bar Color
+
+Edit the settings.json (`winget settings`) file to change the progress bar style:
+
+```
+json
+{
+    "$schema": "https://aka.ms/winget-settings.schema.json",
+    "visual": {
+        "progressBar": "retro"
+    }
+}
+```
+Available options: "`accent`" (default, uses Windows accent color), "`rainbow`", "`retro`", "`disabled`"
+
+
+
+
 Source: https://docs.microsoft.com/en-us/windows/package-manager/
