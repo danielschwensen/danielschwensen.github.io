@@ -25,56 +25,72 @@
     transform: scale(1.1);
     text-decoration: none;
   }
+
+  &:focus-visible {
+    outline: 2px solid #1565c0;
+    outline-offset: 2px;
+    text-decoration: underline;
+  }
 }
 
-// Size classes - smaller tags are lighter, larger are bolder
-.tag-size-1 {
+// Keep tag colors readable, including after a link has been visited.
+.tag-size-1,
+.tag-size-1:visited {
   font-size: 0.85rem;
-  color: #6ec8c8; // Türkis - passt zum Bild
+  color: #247878; // Türkis
   font-weight: 400;
 }
 
-.tag-size-2 {
+.tag-size-2,
+.tag-size-2:visited {
   font-size: 1.1rem;
-  color: #5ba3e0; // Hellblau
+  color: #2769a5; // Blau
   font-weight: 400;
 }
 
-.tag-size-3 {
+.tag-size-3,
+.tag-size-3:visited {
   font-size: 1.4rem;
-  color: #3a9d5c; // Grün
+  color: #287a45; // Grün
   font-weight: 500;
 }
 
-.tag-size-4 {
+.tag-size-4,
+.tag-size-4:visited {
   font-size: 1.8rem;
   color: #2a7ae2; // Kräftiges Blau (Hauptfarbe der Seite)
   font-weight: 500;
 }
 
-.tag-size-5 {
+.tag-size-5,
+.tag-size-5:visited {
   font-size: 2.3rem;
   color: #1565c0; // Dunkelblau
   font-weight: 600;
 }
 
-// Hover effects with slightly different colors
-.tag-size-1:hover {
-  color: #4db8b8;
+// Use darker colors for both mouse hover and keyboard focus.
+.tag-size-1:hover,
+.tag-size-1:focus-visible {
+  color: #1c6060;
 }
 
-.tag-size-2:hover {
-  color: #3d8fd6;
+.tag-size-2:hover,
+.tag-size-2:focus-visible {
+  color: #1e5485;
 }
 
-.tag-size-3:hover {
-  color: #2d8049;
+.tag-size-3:hover,
+.tag-size-3:focus-visible {
+  color: #206237;
 }
 
-.tag-size-4:hover {
+.tag-size-4:hover,
+.tag-size-4:focus-visible {
   color: #1e5bb8;
 }
 
-.tag-size-5:hover {
+.tag-size-5:hover,
+.tag-size-5:focus-visible {
   color: #0d47a1;
 }
