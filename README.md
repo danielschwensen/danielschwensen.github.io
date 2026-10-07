@@ -4,16 +4,31 @@ A personal blog about PowerShell, AWS, Linux, and more.
 
 ## 🚀 Development
 
-### Update Search
-The search is based on a static `search.json`. After creating a new post, the index must be regenerated:
+### Search and publishing
+`search.json` is a Jekyll/Liquid template, not a manually maintained JSON file.
+GitHub Pages generates the JSON index automatically when it builds the site.
+The index uses Jekyll's published posts, article URLs, dates, categories, tags,
+and article text. New, edited, or removed posts are reflected in the next build.
 
-```powershell
-.\scripts\generate-searchjson.ps1
-```
+Work on a branch, commit and push the changes, then open a pull request to
+`master`. The **Check search index** workflow builds the site using GitHub's
+Pages build action and checks the generated `_site/search.json`. It verifies
+the JSON structure, unique URLs, completeness against the homepage's post list,
+article files and dates, and categories/tags against the source metadata.
+The check currently assumes all posts are directly under `_posts` and that the
+homepage lists all posts without pagination. Failures appear in the pull request
+checks and the Actions log, with the affected URL and reason.
 
-### Local Testing
+This workflow only checks the site; it does not publish it. Publishing still
+uses **Settings → Pages → Deploy from a branch → master**. Merge after the
+checks pass, then test the search on the published website.
+
+No local Jekyll installation or manual index generation is required.
+If you already have a local Jekyll environment, you can optionally run:
+
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll build
+ruby scripts/check-search-index.rb _site
 ```
 
 ## 🛠️ Features
