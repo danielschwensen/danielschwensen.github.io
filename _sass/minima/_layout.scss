@@ -42,40 +42,49 @@
   border-radius: 5px;
   text-align: right;
 
-  .nav-trigger {
+  .nav-toggle {
     display: none;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid $text-color;
+      outline-offset: 2px;
+    }
+  }
+
+  &.is-enhanced .nav-toggle {
+    display: inline-flex;
   }
 
   .menu-icon {
-    float: right;
-    width: 36px;
-    height: 26px;
     line-height: 0;
-    padding-top: 10px;
-    text-align: center;
 
     >svg path {
       fill: $border-color-03;
     }
   }
 
-  label[for="nav-trigger"] {
+  .trigger {
+    clear: both;
     display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    cursor: pointer;
+    padding-bottom: 5px;
   }
 
-  input~.trigger {
-    clear: both;
+  &.is-enhanced .trigger {
     display: none;
   }
 
-  input:checked~.trigger {
+  &.is-enhanced.is-open .trigger {
     display: block;
-    padding-bottom: 5px;
   }
 
   .page-link {
@@ -90,6 +99,11 @@
     }
 
     margin-left: 20px;
+
+    &:focus-visible {
+      outline: 2px solid $text-color;
+      outline-offset: 2px;
+    }
   }
 
   @media screen and (min-width: $on-medium) {
@@ -101,7 +115,7 @@
     align-items: center;
     margin-left: auto;
 
-    label[for="nav-trigger"] {
+    &.is-enhanced .nav-toggle {
       display: none;
     }
 
@@ -109,8 +123,10 @@
       display: none;
     }
 
-    input~.trigger {
+    .trigger,
+    &.is-enhanced .trigger {
       display: block;
+      padding-bottom: 0;
     }
 
     .page-link {
