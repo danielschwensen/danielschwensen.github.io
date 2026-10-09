@@ -27,7 +27,9 @@
         {%- endfor -%}
       </div>
     </nav>
-    <script src="{{ '/assets/js/navigation.js' | relative_url }}" defer></script>
+    {%- assign build_timestamp = site.time | date: '%s' -%}
+    {%- assign asset_version = site.github.build_revision | default: build_timestamp -%}
+    <script src="{{ '/assets/js/navigation.js' | relative_url }}?v={{ asset_version | uri_escape }}" defer></script>
     {%- endif -%}
   </div>
 </header>
