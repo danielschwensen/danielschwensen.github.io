@@ -9,25 +9,45 @@ Download Git: Visit the official Git website at git-scm.com to download the late
 
 # Installation Process
 
-![Git Bash 1]({{ "/assets/2023/Git-01.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-01.webp" | absolute_url }}"
+     alt="Git Bash 1" width="619" height="480"
+     loading="eager" style="max-width: 100%; height: auto;">
 
-![Git Bash 2]({{ "/assets/2023/Git-02.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-02.webp" | absolute_url }}"
+     alt="Git Bash 2" width="600" height="480"
+     loading="lazy" style="max-width: 100%; height: auto;">
 
-![Git Bash 3]({{ "/assets/2023/Git-03.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-03.webp" | absolute_url }}"
+     alt="Git Bash 3" width="601" height="480"
+     loading="lazy" style="max-width: 100%; height: auto;">
 
-![Git Bash 4]({{ "/assets/2023/Git-04.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-04.webp" | absolute_url }}"
+     alt="Git Bash 4" width="574" height="480"
+     loading="lazy" style="max-width: 100%; height: auto;">
 
-![Git Bash 5]({{ "/assets/2023/Git-05.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-05.webp" | absolute_url }}"
+     alt="Git Bash 5" width="561" height="480"
+     loading="lazy" style="max-width: 100%; height: auto;">
 
-![Git Bash 6]({{ "/assets/2023/Git-06.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-06.webp" | absolute_url }}"
+     alt="Git Bash 6" width="592" height="480"
+     loading="lazy" style="max-width: 100%; height: auto;">
 
-![Git Bash 7]({{ "/assets/2023/Git-07.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-07.webp" | absolute_url }}"
+     alt="Git Bash 7" width="571" height="480"
+     loading="lazy" style="max-width: 100%; height: auto;">
 
-![Git Bash 8]({{ "/assets/2023/Git-08.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-08.webp" | absolute_url }}"
+     alt="Git Bash 8" width="623" height="480"
+     loading="lazy" style="max-width: 100%; height: auto;">
 
-![Git Bash 9]({{ "/assets/2023/Git-09.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-09.webp" | absolute_url }}"
+     alt="Git Bash 9" width="601" height="480"
+     loading="lazy" style="max-width: 100%; height: auto;">
 
-![Git Bash 10]({{ "/assets/2023/Git-10.png" | absolute_url }})
+<img src="{{ "/assets/2023/Git-10.webp" | absolute_url }}"
+     alt="Git Bash 10" width="600" height="480"
+     loading="lazy" style="max-width: 100%; height: auto;">
 
 # Post-Installation Steps
 
