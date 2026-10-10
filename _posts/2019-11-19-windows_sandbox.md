@@ -8,6 +8,8 @@ tags: Powershell Windows
 Windows Sandbox is perfect if you need to download and install an unknown executable in an isolated, temporary desktop environment where you can run untrusted software without the fear of lasting impact to your PC.
 Any software installed in Windows Sandbox stays only in the sandbox and cannot affect your host. Once Windows Sandbox is closed, all the software with all its files and state are permanently deleted.
 
+![Windows Sandbox logo](/assets/2019/11/windows_sandbox_logo.png)
+
 Features:
 
 - Part of Windows – everything required for this feature ships with Windows 10 Pro and Enterprise. No need to download a VHD!
@@ -42,4 +44,4 @@ Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All 
 
 Now you can search (Windows + Q) for Sandbox and open it.
 
-![Sandbox](/assets/2019/11/sandbox.png)
+![Windows Sandbox window showing the Windows desktop](/assets/2019/11/windows_sandbox_vm.png)
