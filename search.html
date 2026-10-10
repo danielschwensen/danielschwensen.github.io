@@ -29,24 +29,38 @@ permalink: /search.html
       input.value = query;
     }
 
-    // Initialize SimpleJekyllSearch
-    SimpleJekyllSearch({
-      searchInput: input,
-      resultsContainer: resultsContainer,
-      json: '/search.json',
-      searchResultTemplate: '<div style="margin-bottom:16px;"><a href="{url}" style="font-size:1.2em;color:#007acc;">{title}</a><br><span style="color:#555;">{date}</span></div>',
-      noResultsText: '<p>No results found.</p>',
-      limit: 50,
-      fuzzy: false,
-      success: function () {
-        // Use setTimeout to ensure the library has finished attaching event listeners
-        if (query) {
-          setTimeout(function () {
-            var event = new Event('input', { bubbles: true });
-            input.dispatchEvent(event);
-          }, 50);
+    // Load the index before initializing search and running the first query.
+    fetch('/search.json')
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error('Failed to load search index: HTTP ' + response.status);
         }
-      }
-    });
+        return response.json();
+      })
+      .then(function (data) {
+        if (!Array.isArray(data)) {
+          throw new Error('Search index must be an array.');
+        }
+
+        var search = SimpleJekyllSearch({
+          searchInput: input,
+          resultsContainer: resultsContainer,
+          json: data,
+          searchResultTemplate: '<div style="margin-bottom:16px;"><a href="{url}" style="font-size:1.2em;color:#007acc;">{title}</a><br><span style="color:#555;">{date}</span></div>',
+          noResultsText: '<p>No results found.</p>',
+          limit: 50,
+          fuzzy: false
+        });
+
+        // Use the current value in case the visitor typed while loading.
+        if (input.value) {
+          search.search(input.value);
+        }
+      })
+      .catch(function (error) {
+        resultsContainer.textContent = 'Search could not be loaded. Please reload the page to try again.';
+        resultsContainer.setAttribute('role', 'alert');
+        console.error('Search initialization failed:', error);
+      });
   })();
 </script>
