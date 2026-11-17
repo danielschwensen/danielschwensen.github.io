@@ -2,15 +2,18 @@
   'use strict';
 
   document.querySelectorAll('.post-content pre > code').forEach(function (code) {
-    var block = code.closest('.highlighter-rouge, figure.highlight') || code.parentElement;
-    var toolbar = document.createElement('div');
+    var block = code.parentElement;
+    var frame = document.createElement('div');
     var button = document.createElement('button');
     var status = document.createElement('span');
     var copying = false;
 
-    toolbar.className = 'code-copy-toolbar';
+    frame.className = 'code-copy';
     button.type = 'button';
-    button.textContent = 'Copy code';
+    button.className = 'code-copy-button';
+    button.setAttribute('aria-label', 'Copy code');
+    button.title = 'Copy code';
+    status.className = 'code-copy-status';
     status.setAttribute('role', 'status');
 
     button.addEventListener('click', async function () {
@@ -28,7 +31,7 @@
       }
     });
 
-    toolbar.append(button, status);
-    block.before(toolbar);
+    block.before(frame);
+    frame.append(block, button, status);
   });
 })();
