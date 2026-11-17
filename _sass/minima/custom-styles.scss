@@ -1,6 +1,84 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+.post-content pre {
+  white-space: pre;
+  overflow-wrap: normal;
+
+  > code {
+    font-size: 1em;
+  }
+}
+
+.code-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-bottom: $spacing-unit * 0.5;
+  border: 1px solid $border-color-01;
+  border-radius: 3px;
+  background: $code-background-color;
+}
+
+.code-copy > pre {
+  margin: 0;
+  border: 0;
+  background: transparent;
+}
+
+.code-copy-button {
+  position: relative;
+  align-self: start;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.25rem;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: $code-background-color;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $border-color-01;
+    background: $background-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    box-sizing: border-box;
+    width: 11px;
+    height: 13px;
+    border: 1.5px solid currentColor;
+    border-radius: 2px;
+    content: "";
+  }
+
+  &::before {
+    top: 7px;
+    left: 8px;
+  }
+
+  &::after {
+    top: 10px;
+    left: 11px;
+    background: inherit;
+  }
+}
+
+.code-copy-status {
+  grid-column: 1 / -1;
+  font-size: $small-font-size;
+
+  &:not(:empty) {
+    padding: 0.25rem 0.75rem;
+  }
+}
+
 // Tag Cloud Styles
 .tag-cloud {
   display: flex;
