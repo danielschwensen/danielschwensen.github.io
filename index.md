@@ -6,7 +6,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
-list_title: Recent posts
 ---
 
 <h1 class="page-heading">Practical notes on PowerShell, AWS &amp; IT operations</h1>
