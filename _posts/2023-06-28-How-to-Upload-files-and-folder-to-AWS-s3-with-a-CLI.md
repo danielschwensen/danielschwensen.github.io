@@ -3,7 +3,7 @@ layout: post
 title: "How to Upload files and folder to AWS s3 with a CLI"
 date: 2023-06-28
 categories: Cloud
-tags: AWS S3 CLI
+tags: AWS S3 cli
 ---
 To upload files and folders to Amazon S3 using the AWS Command Line Interface (CLI), you can use the aws s3 cp command.
 

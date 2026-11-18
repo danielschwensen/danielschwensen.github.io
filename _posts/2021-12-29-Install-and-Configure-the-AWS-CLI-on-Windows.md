@@ -3,7 +3,7 @@ layout: post
 title: "Install and Configure the AWS CLI on Windows"
 date: 2021-12-29
 categories: blog AWS
-tags: AWS CLI Windows install
+tags: AWS cli Windows install
 ---
 Open the command prompt and run the following two commands:
 

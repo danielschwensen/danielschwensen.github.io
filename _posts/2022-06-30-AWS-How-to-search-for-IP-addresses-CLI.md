@@ -3,7 +3,7 @@ layout: post
 title: "AWS - How to search for IP addresses - CLI"
 date: 2022-06-30
 categories: blog Cloud
-tags: AWS CLI network
+tags: AWS cli network
 ---
 How to find out which resource owns this IP in AWS.
 
