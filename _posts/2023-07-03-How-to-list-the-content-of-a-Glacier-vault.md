@@ -3,7 +3,7 @@ layout: post
 title: "How to list the content of a Glacier vault?"
 date: 2023-07-03
 categories: Cloud
-tags: AWS Glacier CLI
+tags: AWS Glacier cli
 ---
 Want a quick look at what's inside your AWS Glacier vault? Retrieving an inventory is easier than you might think. This post walks you through the simple steps to initiate an inventory-retrieval job and download your vault's contents.
 
