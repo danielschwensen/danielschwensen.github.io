@@ -1,0 +1,55 @@
+# Homebrew setup and maintenance
+- - _posts/2025-03-16-install_homebrew_on_macOS.md
+  - _posts/2025-06-27-managing_applications_homebrew_on_macOS.md
+  - _posts/2022-01-31-cleanup_homebrew.md
+
+# Windows package managers
+- - _posts/2025-01-04-Managing-Packages-with-Chocolatey-on-Windows.md
+  - _posts/2022-05-29-Windows_Package_Manager_WinGet_in_a_Nutshell.md
+
+# WSL setup and maintenance
+- - _posts/2019-04-07-Enable Windows Subsystem for Linux on Windows.md
+  - _posts/2021-04-11-WSL_Upgrade_Ubuntu_to_the_latest_release .md
+  - _posts/2021-04-02-Change_Docker_Default_Location.md
+
+# Working with Docker services
+- - _posts/2023-09-27-How-to-check-if-Docker-is-running.md
+  - _posts/2024-08-28-How_to_connect_to_a_Docker_mysql_container.md
+  - _posts/2019-08-31-wordpress-docker-playground.md
+
+# Git on Windows and repository workflows
+- - _posts/2023-12-03-Install_Git_Windows.md
+  - _posts/2025-04-06-Extracting_a_Subdirectory_with_Git_Subtree_Split.md
+  - _posts/2021-01-04-Change_Font_Size_in_Git_Bash.md
+
+# PowerShell file and path handling
+- - _posts/2026-10-06-Extracting-a-File-Name-from-a-URL-with-PowerShell.md
+  - _posts/2020-12-12-Split_File_Path.md
+  - _posts/2024-09-12-How-to-Change-the-Creation-Timestampwith-Powershell.md
+
+# Processing command output with PowerShell
+- - _posts/2026-02-14-PowerShell-and-SQLite.md
+  - _posts/2023-01-29-Parse-command-line-tool-output-with-Powershell.md
+
+# Interactive PowerShell setup
+- - _posts/2023-08-04-PowerShell-PSReadLine.md
+  - _posts/2019-12-26-make your terminal look great again.md
+
+# AWS S3 workflows
+- - _posts/2023-06-28-How-to-Upload-files-and-folder-to-AWS-s3-with-a-CLI.md
+  - _posts/2021-09-29-AWS-S3-Presigned-URL.md
+
+# Installing and using the AWS CLI
+- - _posts/2021-12-29-Install-and-Configure-the-AWS-CLI-on-Windows.md
+  - _posts/2020-12-10-AWS_CLI_on_CentOS.md
+  - _posts/2023-06-28-How-to-Upload-files-and-folder-to-AWS-s3-with-a-CLI.md
+
+# Linux shell and command-line tools
+- - _posts/2024-11-17-Understanding-Linux-Shells-and-Configuration.md
+  - _posts/2023-02-26-grep.md
+  - _posts/2022-03-31-cat-a-file-with-line-numbers.md
+  - _posts/2025-05-25-Windows-Line-Endings.md
+
+# Finding and connecting to AWS compute resources
+- - _posts/2022-06-30-AWS-How-to-search-for-IP-addresses-CLI.md
+  - _posts/2021-11-30-How-to-connect-to-EC2-via-SSH.md

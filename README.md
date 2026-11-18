@@ -31,6 +31,17 @@ bundle exec jekyll build
 ruby scripts/check-search-index.rb _site
 ```
 
+### Related posts
+
+Maintain topic groups in `_data/related_posts.yml` using exact repository-relative
+post paths. Group posts readers would reasonably look for together. A post may
+belong to several groups. List the most useful follow-up posts first.
+
+Jekyll follows the order of matching groups and their entries, skips the current
+post, repeated URLs and posts outside the published collection, and displays up
+to three links. If only one relevant post is available, it displays one link.
+With no matches, the section is omitted. Update the data file if a post is renamed.
+
 ### Search library version
 
 `search.html` loads **Simple-Jekyll-Search 1.10.0** from unpkg using an exact
