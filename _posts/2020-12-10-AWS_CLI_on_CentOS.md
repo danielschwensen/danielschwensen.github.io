@@ -3,7 +3,7 @@ layout: post
 title: "Install and configure AWS CLI on CentOS"
 date: 2020-12-10
 categories: Cloud OS
-tags: AWS CentOS CLI Linux install
+tags: AWS CentOS cli Linux install
 ---
 Following the process of installing and configuring the Amazon Web Services (AWS) Command Line Interface (CLI) on a CentOS operating system.
 
