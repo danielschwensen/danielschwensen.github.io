@@ -3,7 +3,7 @@ layout: post
 title: "AWS S3 Presigned URL"
 date: 2021-09-28
 categories: Cloud
-tags: AWS S3 CLI
+tags: AWS S3 cli
 ---
 
 If you want to provide temporary S3 access to an object that is otherwise private, then you can generate a presigned URL. The URL will be usable for a specified period of time, after which it will become invalid.
