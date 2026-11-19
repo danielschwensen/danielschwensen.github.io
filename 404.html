@@ -1,5 +1,9 @@
 ---
 layout: base
+title: Page not found
+permalink: /404.html
+sitemap: false
+noindex: true
 ---
 
 <style type="text/css" media="screen">
@@ -19,6 +23,10 @@ layout: base
 <div class="container">
   <h1>404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p>The page you requested could not be found.</p>
+  <p>
+    <a href="{{ '/' | relative_url }}">Home</a> ·
+    <a href="{{ '/search.html' | relative_url }}">Search</a> ·
+    <a href="{{ '/tags/' | relative_url }}">Browse topics</a>
+  </p>
 </div>

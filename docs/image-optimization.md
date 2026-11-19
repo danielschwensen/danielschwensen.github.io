@@ -1,3 +1,11 @@
+---
+layout: base
+title: "Git installation article: image optimization"
+permalink: /docs/image-optimization/
+sitemap: false
+noindex: true
+---
+
 # Git installation article: image optimization
 
 Issue: #23. Scope: `_posts/2023-12-03-Install_Git_Windows.md`.
