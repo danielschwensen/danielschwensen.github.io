@@ -24,7 +24,7 @@ In the “Applications” → “SQL Server” page a “Reset root password” 
 
 Also, you need to install  phpMyAdmin in order to administer your databases with a web browser.
 
-![My helpful screenshot]({{ "/assets/2018-02-09-myPHPAdmin.png" | absolute_url }})
+![QNAP app tile for phpMyAdmin version 4.7.4.0]({{ "/assets/2018-02-09-myPHPAdmin.png" | absolute_url }})
 
 Access: http://`<ip of your Qnap>`/phpMyAdmin
 

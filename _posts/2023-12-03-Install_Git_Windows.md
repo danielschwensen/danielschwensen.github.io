@@ -10,43 +10,43 @@ Download Git: Visit the official Git website at git-scm.com to download the late
 # Installation Process
 
 <img src="{{ "/assets/2023/Git-01.webp" | absolute_url }}"
-     alt="Git Bash 1" width="619" height="480"
+     alt="Git setup enables Git Bash Here and Git GUI Here in Windows Explorer, Git LFS, and file associations for Git configuration and shell scripts" width="619" height="480"
      loading="eager" style="max-width: 100%; height: auto;">
 
 <img src="{{ "/assets/2023/Git-02.webp" | absolute_url }}"
-     alt="Git Bash 2" width="600" height="480"
+     alt="Visual Studio Code selected as the default Git editor" width="600" height="480"
      loading="lazy" style="max-width: 100%; height: auto;">
 
 <img src="{{ "/assets/2023/Git-03.webp" | absolute_url }}"
-     alt="Git Bash 3" width="601" height="480"
+     alt="Let Git decide selected for the initial branch name in new repositories" width="601" height="480"
      loading="lazy" style="max-width: 100%; height: auto;">
 
 <img src="{{ "/assets/2023/Git-04.webp" | absolute_url }}"
-     alt="Git Bash 4" width="574" height="480"
+     alt="Git added to PATH for the command line and third-party software" width="574" height="480"
      loading="lazy" style="max-width: 100%; height: auto;">
 
 <img src="{{ "/assets/2023/Git-05.webp" | absolute_url }}"
-     alt="Git Bash 5" width="561" height="480"
+     alt="Git set to check out Windows-style line endings and commit Unix-style line endings" width="561" height="480"
      loading="lazy" style="max-width: 100%; height: auto;">
 
 <img src="{{ "/assets/2023/Git-06.webp" | absolute_url }}"
-     alt="Git Bash 6" width="592" height="480"
+     alt="MinTTY selected as the terminal emulator for Git Bash" width="592" height="480"
      loading="lazy" style="max-width: 100%; height: auto;">
 
 <img src="{{ "/assets/2023/Git-07.webp" | absolute_url }}"
-     alt="Git Bash 7" width="571" height="480"
+     alt="Git pull set to fast-forward when possible and merge otherwise" width="571" height="480"
      loading="lazy" style="max-width: 100%; height: auto;">
 
 <img src="{{ "/assets/2023/Git-08.webp" | absolute_url }}"
-     alt="Git Bash 8" width="623" height="480"
+     alt="Git Credential Manager Core selected as the credential helper" width="623" height="480"
      loading="lazy" style="max-width: 100%; height: auto;">
 
 <img src="{{ "/assets/2023/Git-09.webp" | absolute_url }}"
-     alt="Git Bash 9" width="601" height="480"
+     alt="File system caching enabled and symbolic links left disabled" width="601" height="480"
      loading="lazy" style="max-width: 100%; height: auto;">
 
 <img src="{{ "/assets/2023/Git-10.webp" | absolute_url }}"
-     alt="Git Bash 10" width="600" height="480"
+     alt="Experimental pseudo console support left unchecked before clicking Install" width="600" height="480"
      loading="lazy" style="max-width: 100%; height: auto;">
 
 # Post-Installation Steps
