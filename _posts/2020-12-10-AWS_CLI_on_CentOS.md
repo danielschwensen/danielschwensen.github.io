@@ -5,7 +5,9 @@ date: 2020-12-10
 categories: Cloud OS
 tags: AWS CentOS cli Linux install
 ---
-Following the process of installing and configuring the Amazon Web Services (AWS) Command Line Interface (CLI) on a CentOS operating system.
+
+{: .box-note}
+**Historical guide (2020).** The steps below describe the older AWS CLI v1 installation via `pip` on CentOS. For a current installation, use the Linux section of the [official AWS CLI v2 installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and check its requirements for your distribution.
 
 ````bash
 sudo yum install epel-release
