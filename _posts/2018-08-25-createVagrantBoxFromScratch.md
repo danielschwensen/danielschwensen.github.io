@@ -32,15 +32,15 @@ curl http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/
 
 Create a new vm
 
-![01]({{ "/assets/20180825-CreateVagrantBoxFromScratch-01.png" | absolute_url }})
+![VirtualBox VM named Ubuntu64-base with Linux and Ubuntu (64-bit) selected]({{ "/assets/20180825-CreateVagrantBoxFromScratch-01.png" | absolute_url }})
 
-![02]({{ "/assets/20180825-CreateVagrantBoxFromScratch-02.png" | absolute_url }})
+![VirtualBox memory settings showing 515 MB entered and 1,024 MB recommended by the wizard]({{ "/assets/20180825-CreateVagrantBoxFromScratch-02.png" | absolute_url }})
 
-![03]({{ "/assets/20180825-CreateVagrantBoxFromScratch-03.png" | absolute_url }})
+![Create a virtual hard disk now selected in the VirtualBox wizard]({{ "/assets/20180825-CreateVagrantBoxFromScratch-03.png" | absolute_url }})
 
-![04]({{ "/assets/20180825-CreateVagrantBoxFromScratch-04.png" | absolute_url }})
+![Dynamically allocated storage selected for the virtual hard disk]({{ "/assets/20180825-CreateVagrantBoxFromScratch-04.png" | absolute_url }})
 
-![05]({{ "/assets/20180825-CreateVagrantBoxFromScratch-05.png" | absolute_url }})
+![Virtual disk named Ubuntu64-base with a maximum size of 40 GB]({{ "/assets/20180825-CreateVagrantBoxFromScratch-05.png" | absolute_url }})
 
 
 ## VM Settings
@@ -49,11 +49,11 @@ Disable audio and USB.
 
 Set network to NAT and add port forwarding for SSH.
 
-![06]({{ "/assets/20180825-CreateVagrantBoxFromScratch-06.png" | absolute_url }})
+![VirtualBox SSH forwarding rule maps TCP host port 2222 to guest port 22]({{ "/assets/20180825-CreateVagrantBoxFromScratch-06.png" | absolute_url }})
 
 Select your iso image.
 
-![07]({{ "/assets/20180825-CreateVagrantBoxFromScratch-07.png" | absolute_url }})
+![Ubuntu-mini.iso attached to the virtual optical drive under the IDE controller]({{ "/assets/20180825-CreateVagrantBoxFromScratch-07.png" | absolute_url }})
 
 Start the vm and confirm the default settings during the installation.
 
@@ -65,13 +65,13 @@ Use entire disk
 
 Install automatic updates
 
-![08]({{ "/assets/20180825-CreateVagrantBoxFromScratch-08.png" | absolute_url }})
+![Ubuntu installer with OpenSSH server and Basic Ubuntu server selected]({{ "/assets/20180825-CreateVagrantBoxFromScratch-08.png" | absolute_url }})
 
 Don't forget to remove the iso, after finishing the installation.
 
 Now you should be able to log in with user vagrant
 
-![09]({{ "/assets/20180825-CreateVagrantBoxFromScratch-09.png" | absolute_url }})
+![Ubuntu 18.04.1 LTS console after a successful login as vagrant]({{ "/assets/20180825-CreateVagrantBoxFromScratch-09.png" | absolute_url }})
 
 Although vagrant is a superuser you don't want to type sudo < command > all the time.
 
@@ -146,8 +146,8 @@ rm -f /EMPTY
 
 ## Create your box
 
-![10]({{ "/assets/20180825-CreateVagrantBoxFromScratch-10.png" | absolute_url }})
-![11]({{ "/assets/20180825-CreateVagrantBoxFromScratch-11.png" | absolute_url }})
+![vagrant package --base Ubuntu64-base exports the VM and compresses it into package.box]({{ "/assets/20180825-CreateVagrantBoxFromScratch-10.png" | absolute_url }})
+![vagrant box add ubuntu64 package.box succeeds, and vagrant box list shows ubuntu64 for VirtualBox]({{ "/assets/20180825-CreateVagrantBoxFromScratch-11.png" | absolute_url }})
 
 Run
 
@@ -156,7 +156,7 @@ vagrant init ubuntu64 -m
 vagrant up
 {% endhighlight %}
 
-![12]({{ "/assets/20180825-CreateVagrantBoxFromScratch-12.png" | absolute_url }})
+![vagrant up reports the VM booted and ready, replaces the default SSH key, and mounts the shared folder at /vagrant]({{ "/assets/20180825-CreateVagrantBoxFromScratch-12.png" | absolute_url }})
 
 You now should be able to access your box via ssh
 
